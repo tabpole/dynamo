@@ -25,10 +25,10 @@ class ColorManager {
   static const Color ACCENT = Color(0xff0050FF);
   static const Color ACCENT_ALT = Color(0xff0033A2);
 
-  static const Color BRAND_ALPHA = Color(0xff00C9B8);
-  static const Color BRAND_BETA = Color(0xff864ADB);
-  static const Color BRAND_GAMMA = Color(0xffCF0D7E);
-  static const Color BRAND_DELTA = Color(0xff85E7AE);
+  static const Color BRAND_ALPHA = Color(0xffCF0D7E);
+  static const Color BRAND_BETA = Color(0xffff9a02);
+  static const Color BRAND_GAMMA = Color(0xff6a00f4);
+  static const Color BRAND_DELTA = Color(0xff780a1d);
 
   // When Necessary
   static const Color SUCCESS = Color(0xff00B922);
