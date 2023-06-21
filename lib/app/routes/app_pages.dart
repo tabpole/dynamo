@@ -14,7 +14,7 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.APP_COLOR;
+  static const INITIAL = Routes.APP_TYPOGRAPHY;
 
   static final routes = [
     GetPage(

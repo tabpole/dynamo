@@ -23,7 +23,9 @@ class ColorManager {
 
   // use 10%
   static const Color ACCENT = Color(0xff0050FF);
+  static Color ACCENT_LIGHT = ACCENT.withOpacity(0.1);
   static const Color ACCENT_ALT = Color(0xff0033A2);
+  static Color ACCENT_ALT_LIGHT = ACCENT_ALT.withOpacity(0.1);
 
   static const Color BRAND_ALPHA = Color(0xffCF0D7E);
   static const Color BRAND_BETA = Color(0xffff9a02);
