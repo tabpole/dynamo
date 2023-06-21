@@ -22,14 +22,12 @@ class AppTypographyView extends GetView<AppTypographyController> {
                   shrinkWrap: true,
                   primary: false,
                   itemCount: controller.sizes.length,
-                  itemBuilder: (context, index) {
-                    return Text(
-                      "${controller.sizes[index].toInt()}px : ${controller.text}",
-                      style: TextStyle(
-                        fontSize: controller.sizes[index],
-                      ),
-                    );
-                  },
+                  itemBuilder: (context, index) => Text(
+                    "${controller.sizes[index].toInt()}px : ${controller.text}",
+                    style: TextStyle(
+                      fontSize: controller.sizes[index],
+                    ),
+                  ),
                   separatorBuilder: (context, index) => const Divider(),
                 ),
               ],

@@ -7,10 +7,12 @@ abstract class Routes {
   Routes._();
   static const HOME = _Paths.HOME;
   static const APP_TYPOGRAPHY = _Paths.APP_TYPOGRAPHY;
+  static const APP_COLOR = _Paths.APP_COLOR;
 }
 
 abstract class _Paths {
   _Paths._();
   static const HOME = '/home';
   static const APP_TYPOGRAPHY = '/app-typography';
+  static const APP_COLOR = '/app-color';
 }

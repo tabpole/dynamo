@@ -3,12 +3,14 @@
 import 'package:flutter/material.dart';
 
 class TextColorManager {
-  static const Color PRIMARY = Color(0xff212121);
-  static const Color PRIMARY_ALT = Color(0xff0033A2);
-  static const Color SECONDARY = Color(0xff3A3F4A);
-  static const Color SECONDARY_ALT = Color(0xff757575);
+  // Color Pallets Source
+  // https://coolors.co/palette/f8f9fa-e9ecef-dee2e6-ced4da-adb5bd-6c757d-495057-343a40-212529
+
+  static const Color PRIMARY = Color(0xff212529); // 10%
+  static const Color PRIMARY_REGULAR = Color(0xff212529); // 30%
+  static const Color PRIMARY_LIGHT = Color(0xff495057); // 60%
+
   static const Color ACCENT = Colors.white;
-  static const Color DISABLED = Color(0xffCFD3D7);
 
   // Brand
   static const Color BRAND_ALPHA = Color(0xff00C9B8);

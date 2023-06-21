@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 
+import '../modules/app_color/bindings/app_color_binding.dart';
+import '../modules/app_color/views/app_color_view.dart';
 import '../modules/app_typography/bindings/app_typography_binding.dart';
 import '../modules/app_typography/views/app_typography_view.dart';
 import '../modules/home/bindings/home_binding.dart';
@@ -12,7 +14,7 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.APP_TYPOGRAPHY;
+  static const INITIAL = Routes.APP_COLOR;
 
   static final routes = [
     GetPage(
@@ -24,6 +26,11 @@ class AppPages {
       name: _Paths.APP_TYPOGRAPHY,
       page: () => const AppTypographyView(),
       binding: AppTypographyBinding(),
+    ),
+    GetPage(
+      name: _Paths.APP_COLOR,
+      page: () => const AppColorView(),
+      binding: AppColorBinding(),
     ),
   ];
 }
