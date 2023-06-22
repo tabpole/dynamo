@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../core/util/color_manager.dart';
+import '../../core/util/color_manager.dart';
 
 class CircularIcon extends StatelessWidget {
   final IconData icon;

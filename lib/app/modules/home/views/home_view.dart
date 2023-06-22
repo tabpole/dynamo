@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
-import '../../../routes/app_pages.dart';
+import '../../../widgets/app_container.dart';
+import '../../../widgets/atoms/texts.dart';
+import '../../../widgets/elements/cards.dart';
 import '../controllers/home_controller.dart';
 
 class HomeView extends GetView<HomeController> {
@@ -10,17 +12,41 @@ class HomeView extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text('Tablark'),
+      ),
       body: SingleChildScrollView(
-        child: SizedBox(
-          width: double.maxFinite,
+        child: AppContainer(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              const SizedBox(height: 64),
-              ElevatedButton(
-                onPressed: () => Get.toNamed(Routes.APP_TYPOGRAPHY),
-                child: const Text('Typography'),
+              const SizedBox(height: 48),
+              const XLargeBoldText('Atoms'),
+              const SizedBox(height: 16),
+              Center(
+                child: Wrap(
+                  spacing: 16,
+                  children: [
+                    for (int index = 0; index < 6; index++)
+                      const TextCard(
+                        title: 'Example',
+                      ),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 48),
+              const XLargeBoldText('Atoms'),
+              const SizedBox(height: 16),
+              Center(
+                child: Wrap(
+                  spacing: 16,
+                  children: [
+                    for (int index = 0; index < 8; index++)
+                      const TextCard(
+                        title: 'Example',
+                      ),
+                  ],
+                ),
               ),
             ],
           ),

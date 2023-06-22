@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../core/util/font_size_manager.dart';
-import '../core/util/text_color_manager.dart';
+import '../../core/util/font_size_manager.dart';
+import '../../core/util/text_color_manager.dart';
 
 //*********************************************/
 // ****************** TINY ********************/

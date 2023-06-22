@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../../widgets/text_widget.dart';
+import '../../../widgets/atoms/texts.dart';
 import '../controllers/app_typography_controller.dart';
 import '../widgets/text_card.dart';
 

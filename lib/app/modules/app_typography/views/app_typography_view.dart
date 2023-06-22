@@ -11,8 +11,11 @@ class AppTypographyView extends GetView<AppTypographyController> {
   const AppTypographyView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: SingleChildScrollView(
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Tablark'),
+      ),
+      body: const SingleChildScrollView(
         child: AppContainer(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,

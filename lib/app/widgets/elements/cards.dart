@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
-import '../../../core/util/color_manager.dart';
+import '../../core/util/color_manager.dart';
+import '../atoms/icons.dart';
+import '../atoms/texts.dart';
 
-import '../../../widgets/atoms/icons.dart';
-import '../../../widgets/atoms/texts.dart';
-
+//*********************************************/
+// **************** ICON CARD *****************/
+//*********************************************/
 class TextCard extends StatelessWidget {
   final Color color;
   final String title;
@@ -25,6 +27,7 @@ class TextCard extends StatelessWidget {
         Container(
           padding: const EdgeInsets.all(16),
           margin: const EdgeInsets.symmetric(vertical: 8),
+          width: 200,
           decoration: BoxDecoration(
             color: color,
             borderRadius: BorderRadius.circular(8),
@@ -33,22 +36,12 @@ class TextCard extends StatelessWidget {
               color: ColorManager.SECONDARY_ALT,
             ),
           ),
-          child: Row(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              const CircularIcon(Icons.handshake),
-              const SizedBox(width: 16),
-              Flexible(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    RegularBoldText(title),
-                    const SizedBox(height: 8),
-                    RegularText(body),
-                    const SizedBox(height: 8),
-                    SmallBoldText(hint),
-                  ],
-                ),
-              ),
+              const CircularIcon(Icons.text_fields),
+              const SizedBox(height: 8),
+              RegularBoldText(title),
             ],
           ),
         ),
