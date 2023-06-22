@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../widgets/atoms/texts.dart';
+
 class ColorCard extends StatelessWidget {
   final Color color;
   final String code;
@@ -15,7 +17,7 @@ class ColorCard extends StatelessWidget {
       children: [
         Container(
           height: 120,
-          width: 120,
+          width: 400,
           decoration: BoxDecoration(
             color: color,
             borderRadius: BorderRadius.circular(4),
@@ -30,10 +32,7 @@ class ColorCard extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 8),
-        Text(
-          code,
-          style: const TextStyle(fontSize: 13),
-        ),
+        RegularText(code),
         const SizedBox(height: 16),
       ],
     );

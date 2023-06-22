@@ -1,11 +1,13 @@
 import 'package:get/get.dart';
 
-import '../modules/app_color/bindings/app_color_binding.dart';
-import '../modules/app_color/views/app_color_view.dart';
 import '../modules/app_typography/bindings/app_typography_binding.dart';
 import '../modules/app_typography/views/app_typography_view.dart';
+import '../modules/color/bindings/color_binding.dart';
+import '../modules/color/views/color_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
+import '../modules/typography/bindings/typography_binding.dart';
+import '../modules/typography/views/typography_view.dart';
 
 // ignore_for_file: constant_identifier_names
 
@@ -28,9 +30,14 @@ class AppPages {
       binding: AppTypographyBinding(),
     ),
     GetPage(
-      name: _Paths.APP_COLOR,
-      page: () => const AppColorView(),
-      binding: AppColorBinding(),
+      name: _Paths.TYPOGRAPHY,
+      page: () => const TypographyView(),
+      binding: TypographyBinding(),
+    ),
+    GetPage(
+      name: _Paths.COLOR,
+      page: () => const ColorView(),
+      binding: ColorBinding(),
     ),
   ];
 }
