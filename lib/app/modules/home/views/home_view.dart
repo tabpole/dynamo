@@ -29,12 +29,12 @@ class HomeView extends GetView<HomeController> {
                   spacing: 16,
                   runSpacing: 16,
                   children: [
-                    TextCard(
+                    CircularIconTextCard(
                       title: 'Color',
                       icon: Icons.color_lens_sharp,
                       onTap: () => Get.toNamed(Routes.COLOR),
                     ),
-                    TextCard(
+                    CircularIconTextCard(
                       title: 'Typography',
                       icon: Icons.text_fields_rounded,
                       onTap: () => Get.toNamed(Routes.TYPOGRAPHY),
@@ -43,7 +43,7 @@ class HomeView extends GetView<HomeController> {
                 ),
               ),
               const SizedBox(height: 48),
-              const XLargeBoldText('Atoms'),
+              const XLargeBoldText('Elements'),
               const SizedBox(height: 16),
               Center(
                 child: Wrap(
@@ -51,7 +51,7 @@ class HomeView extends GetView<HomeController> {
                   runSpacing: 16,
                   children: [
                     for (int index = 0; index < 8; index++)
-                      const TextCard(
+                      const CircularIconTextCard(
                         title: 'Example',
                       ),
                   ],

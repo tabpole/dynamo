@@ -14,7 +14,7 @@ class ColorManager {
 
   // use 30%
   static const Color SECONDARY = Color(0xffDEE2E6);
-  static const Color SECONDARY_ALT = Color(0xffCED4DA);
+  static const Color SECONDARY_ALT = Color(0xffCED4DA); // Use in Border
 
   static Color BRAND_ALPHA_LIGHT = BRAND_ALPHA.withOpacity(0.1);
   static Color BRAND_BETA_LIGHT = BRAND_BETA.withOpacity(0.1);

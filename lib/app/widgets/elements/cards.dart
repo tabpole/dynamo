@@ -7,17 +7,19 @@ import '../atoms/texts.dart';
 //*********************************************/
 // **************** ICON CARD *****************/
 //*********************************************/
-class TextCard extends StatelessWidget {
+class CircularIconTextCard extends StatelessWidget {
   final Color color;
   final String title;
   final IconData icon;
+  final Color iconColor;
   final VoidCallback? onTap;
 
-  const TextCard({
+  const CircularIconTextCard({
     super.key,
     this.color = Colors.white,
     this.title = '',
     this.icon = Icons.u_turn_right_rounded,
+    this.iconColor = ColorManager.ACCENT,
     this.onTap,
   });
 
@@ -39,7 +41,10 @@ class TextCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            CircularIcon(icon),
+            CircularIcon(
+              icon,
+              color: iconColor,
+            ),
             const SizedBox(height: 8),
             RegularBoldText(title),
           ],
