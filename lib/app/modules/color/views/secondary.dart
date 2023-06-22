@@ -19,8 +19,14 @@ class Secondary extends StatelessWidget {
           alignment: WrapAlignment.start,
           spacing: 16,
           children: [
-            ColorCard(color: ColorManager.SECONDARY, code: 'Main'),
-            ColorCard(color: ColorManager.SECONDARY_ALT, code: 'Alternative'),
+            ColorCard(
+              color: ColorManager.SECONDARY,
+              code: 'Main',
+            ),
+            ColorCard(
+              color: ColorManager.SECONDARY_ALT,
+              code: 'Alternative',
+            ),
           ],
         ),
         const SizedBox(height: 16),
@@ -31,10 +37,22 @@ class Secondary extends StatelessWidget {
           spacing: 16,
           children: [
             // Example : Icon Color
-            ColorCard(color: ColorManager.BRAND_ALPHA_LIGHT, code: 'Alpha'),
-            ColorCard(color: ColorManager.BRAND_BETA_LIGHT, code: 'Beta'),
-            ColorCard(color: ColorManager.BRAND_GAMMA_LIGHT, code: 'Gamma'),
-            ColorCard(color: ColorManager.BRAND_DELTA_LIGHT, code: 'Delta'),
+            ColorCard(
+              color: ColorManager.BRAND_ALPHA_LIGHT,
+              code: 'Alpha',
+            ),
+            ColorCard(
+              color: ColorManager.BRAND_BETA_LIGHT,
+              code: 'Beta',
+            ),
+            ColorCard(
+              color: ColorManager.BRAND_GAMMA_LIGHT,
+              code: 'Gamma',
+            ),
+            ColorCard(
+              color: ColorManager.BRAND_DELTA_LIGHT,
+              code: 'Delta',
+            ),
           ],
         ),
       ],

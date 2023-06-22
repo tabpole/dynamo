@@ -19,8 +19,14 @@ class Accent extends StatelessWidget {
           alignment: WrapAlignment.start,
           spacing: 16,
           children: [
-            ColorCard(color: ColorManager.ACCENT, code: 'Main'),
-            ColorCard(color: ColorManager.ACCENT_ALT, code: 'Alternative'),
+            ColorCard(
+              color: ColorManager.ACCENT,
+              code: 'Main',
+            ),
+            ColorCard(
+              color: ColorManager.ACCENT_ALT,
+              code: 'Alternative',
+            ),
           ],
         ),
         SizedBox(height: 16),
@@ -31,10 +37,22 @@ class Accent extends StatelessWidget {
           spacing: 16,
           children: [
             // Example : Icon Color
-            ColorCard(color: ColorManager.BRAND_ALPHA, code: 'Alpha'),
-            ColorCard(color: ColorManager.BRAND_BETA, code: 'Beta'),
-            ColorCard(color: ColorManager.BRAND_GAMMA, code: 'Gamma'),
-            ColorCard(color: ColorManager.BRAND_DELTA, code: 'Delta'),
+            ColorCard(
+              color: ColorManager.BRAND_ALPHA,
+              code: 'Alpha',
+            ),
+            ColorCard(
+              color: ColorManager.BRAND_BETA,
+              code: 'Beta',
+            ),
+            ColorCard(
+              color: ColorManager.BRAND_GAMMA,
+              code: 'Gamma',
+            ),
+            ColorCard(
+              color: ColorManager.BRAND_DELTA,
+              code: 'Delta',
+            ),
           ],
         ),
       ],

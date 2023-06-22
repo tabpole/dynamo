@@ -13,6 +13,7 @@ class TextColorManager {
   static const Color ACCENT = Colors.white;
 
   // Brand
+  static const Color BRAND_ACCENT = Color(0xff0050FF);
   static const Color BRAND_ALPHA = Color(0xffCF0D7E);
   static const Color BRAND_BETA = Color(0xffff9a02);
   static const Color BRAND_GAMMA = Color(0xff6a00f4);

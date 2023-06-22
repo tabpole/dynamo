@@ -19,8 +19,14 @@ class Primary extends StatelessWidget {
           alignment: WrapAlignment.start,
           spacing: 16,
           children: [
-            ColorCard(color: ColorManager.PRIMARY, code: 'Main'),
-            ColorCard(color: ColorManager.PRIMARY_ALT, code: 'Alternative'),
+            ColorCard(
+              color: ColorManager.PRIMARY,
+              code: 'Main',
+            ),
+            ColorCard(
+              color: ColorManager.PRIMARY_ALT,
+              code: 'Alternative',
+            ),
           ],
         ),
       ],

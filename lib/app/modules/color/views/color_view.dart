@@ -28,7 +28,6 @@ class ColorView extends GetView<ColorController> {
                 Secondary(),
                 SizedBox(height: 64),
                 Accent(),
-                //TODO: Text Color
               ],
             ),
           ),
