@@ -6,7 +6,6 @@ part of 'app_pages.dart';
 abstract class Routes {
   Routes._();
   static const HOME = _Paths.HOME;
-  static const APP_TYPOGRAPHY = _Paths.APP_TYPOGRAPHY;
   static const TYPOGRAPHY = _Paths.TYPOGRAPHY;
   static const COLOR = _Paths.COLOR;
 }
@@ -14,7 +13,6 @@ abstract class Routes {
 abstract class _Paths {
   _Paths._();
   static const HOME = '/home';
-  static const APP_TYPOGRAPHY = '/app-typography';
   static const TYPOGRAPHY = '/typography';
   static const COLOR = '/color';
 }

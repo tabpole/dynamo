@@ -1,7 +1,5 @@
 import 'package:get/get.dart';
 
-import '../modules/app_typography/bindings/app_typography_binding.dart';
-import '../modules/app_typography/views/app_typography_view.dart';
 import '../modules/color/bindings/color_binding.dart';
 import '../modules/color/views/color_view.dart';
 import '../modules/home/bindings/home_binding.dart';
@@ -23,11 +21,6 @@ class AppPages {
       name: _Paths.HOME,
       page: () => const HomeView(),
       binding: HomeBinding(),
-    ),
-    GetPage(
-      name: _Paths.APP_TYPOGRAPHY,
-      page: () => const AppTypographyView(),
-      binding: AppTypographyBinding(),
     ),
     GetPage(
       name: _Paths.TYPOGRAPHY,
