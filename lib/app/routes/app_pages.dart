@@ -4,6 +4,8 @@ import '../modules/color/bindings/color_binding.dart';
 import '../modules/color/views/color_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
+import '../modules/actions/snackbar/bindings/snackbar_binding.dart';
+import '../modules/actions/snackbar/views/snackbar_view.dart';
 import '../modules/typography/bindings/typography_binding.dart';
 import '../modules/typography/views/typography_view.dart';
 
@@ -22,15 +24,34 @@ class AppPages {
       page: () => const HomeView(),
       binding: HomeBinding(),
     ),
-    GetPage(
-      name: _Paths.TYPOGRAPHY,
-      page: () => const TypographyView(),
-      binding: TypographyBinding(),
-    ),
+
+    //***********************************************/
+    // ******************  Atoms  *******************/
+    //***********************************************/
     GetPage(
       name: _Paths.COLOR,
       page: () => const ColorView(),
       binding: ColorBinding(),
     ),
+    GetPage(
+      name: _Paths.TYPOGRAPHY,
+      page: () => const TypographyView(),
+      binding: TypographyBinding(),
+    ),
+    //***********************************************/
+    // ***************** Elements *******************/
+    //***********************************************/
+
+    //***********************************************/
+    // ****************** Actions *******************/
+    //***********************************************/
+    GetPage(
+      name: _Paths.SNACKBAR,
+      page: () => const SnackbarView(),
+      binding: SnackbarBinding(),
+    ),
+    //***********************************************/
+    // ******************  Others  ******************/
+    //***********************************************/
   ];
 }

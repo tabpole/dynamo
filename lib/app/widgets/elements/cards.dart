@@ -18,7 +18,7 @@ class CircularIconTextCard extends StatelessWidget {
     super.key,
     this.color = Colors.white,
     this.title = '',
-    this.icon = Icons.u_turn_right_rounded,
+    this.icon = Icons.check_circle_outlined,
     this.iconColor = ColorManager.ACCENT,
     this.onTap,
   });

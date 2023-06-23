@@ -1,7 +1,7 @@
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
 
-import '../../components/snackbar.dart';
+import '../../actions/snackbar.dart';
 
 class InternetConnection {
   static void check() async {

@@ -50,10 +50,26 @@ class HomeView extends GetView<HomeController> {
                   spacing: 16,
                   runSpacing: 16,
                   children: [
-                    for (int index = 0; index < 8; index++)
+                    for (int index = 0; index < 4; index++)
                       const CircularIconTextCard(
                         title: 'Example',
                       ),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 48),
+              const XLargeBoldText('Actions'),
+              const SizedBox(height: 16),
+              Center(
+                child: Wrap(
+                  spacing: 16,
+                  runSpacing: 16,
+                  children: [
+                    CircularIconTextCard(
+                      title: 'Snackbar',
+                      icon: Icons.notification_important_sharp,
+                      onTap: () => Get.toNamed(Routes.SNACKBAR),
+                    ),
                   ],
                 ),
               ),

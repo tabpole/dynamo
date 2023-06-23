@@ -26,7 +26,7 @@ class ErrorSnackbar {
       colorText: TextColorManager.ACCENT,
       margin: const EdgeInsets.all(10),
       duration: const Duration(seconds: 4),
-      backgroundColor: ColorManager.ACCENT,
+      backgroundColor: ColorManager.DANGER,
       snackPosition: SnackPosition.TOP,
     );
   }
