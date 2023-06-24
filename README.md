@@ -33,7 +33,12 @@ A new design pattern for flutter project using getx & getx pattern.
 
 ## Upcoming features
 
+### features
+
 - Database Provider
+
+### UI elements
+
 - Accordion
 - Alerts
 - Avatar
