@@ -30,6 +30,8 @@ A new design pattern for flutter project using getx & getx pattern.
 ### Actions
 
 - Snackbar
+- Dialog
+- Sheet
 
 ## Upcoming features
 
