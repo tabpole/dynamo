@@ -14,6 +14,7 @@ class SuccessSnackbar {
       duration: const Duration(seconds: 5),
       backgroundColor: ColorManager.SECONDARY,
       snackPosition: SnackPosition.TOP,
+      maxWidth: 400,
     );
   }
 }
@@ -28,6 +29,7 @@ class ErrorSnackbar {
       duration: const Duration(seconds: 4),
       backgroundColor: ColorManager.DANGER,
       snackPosition: SnackPosition.TOP,
+      maxWidth: 400,
     );
   }
 }

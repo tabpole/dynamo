@@ -7,11 +7,13 @@ enum ContainerType { REGULAR, FLUID }
 class AppContainer extends StatelessWidget {
   final Widget child;
   final ContainerType type;
+  final double? height;
 
   const AppContainer({
     super.key,
     required this.child,
     this.type = ContainerType.REGULAR,
+    this.height,
   });
 
   @override
@@ -25,6 +27,7 @@ class AppContainer extends StatelessWidget {
     }
 
     return Container(
+      height: height,
       padding: EdgeInsets.symmetric(vertical: vPadding, horizontal: hPadding),
       child: child,
     );
