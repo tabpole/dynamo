@@ -30,7 +30,7 @@ class CircularIconTextCard extends StatelessWidget {
       onTap: onTap,
       child: Container(
         padding: const EdgeInsets.all(16),
-        width: 200,
+        width: 400,
         decoration: BoxDecoration(
           color: color,
           borderRadius: BorderRadius.circular(VariableManager.edgeRadius),

@@ -50,7 +50,7 @@ class HomeView extends GetView<HomeController> {
                   spacing: 16,
                   runSpacing: 16,
                   children: [
-                    for (int index = 0; index < 4; index++)
+                    for (int index = 0; index < 6; index++)
                       const CircularIconTextCard(
                         title: 'Example',
                       ),
@@ -74,6 +74,11 @@ class HomeView extends GetView<HomeController> {
                       title: 'Dialog',
                       icon: Icons.swipe_right,
                       onTap: () => Get.toNamed(Routes.DIALOG),
+                    ),
+                    CircularIconTextCard(
+                      title: 'Sheet',
+                      icon: Icons.fact_check_sharp,
+                      onTap: () => Get.toNamed(Routes.SHEET),
                     ),
                   ],
                 ),
