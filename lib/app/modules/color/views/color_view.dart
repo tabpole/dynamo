@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-import 'package:tablark/app/widgets/app_container.dart';
 
+import '../../../widgets/app_container.dart';
 import '../controllers/color_controller.dart';
 
 import 'accent.dart';

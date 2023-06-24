@@ -67,8 +67,13 @@ class HomeView extends GetView<HomeController> {
                   children: [
                     CircularIconTextCard(
                       title: 'Snackbar',
-                      icon: Icons.notification_important_sharp,
+                      icon: Icons.notifications_active,
                       onTap: () => Get.toNamed(Routes.SNACKBAR),
+                    ),
+                    CircularIconTextCard(
+                      title: 'Dialog',
+                      icon: Icons.swipe_right,
+                      onTap: () => Get.toNamed(Routes.DIALOG),
                     ),
                   ],
                 ),

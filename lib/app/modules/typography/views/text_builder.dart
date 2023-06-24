@@ -2,9 +2,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:tablark/app/modules/typography/controllers/typography_controller.dart';
 
 import '../../../widgets/atoms/texts.dart';
+import '../controllers/typography_controller.dart';
 
 enum TextType {
   TinyText,

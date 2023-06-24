@@ -1,11 +1,13 @@
 import 'package:get/get.dart';
 
-import '../modules/color/bindings/color_binding.dart';
-import '../modules/color/views/color_view.dart';
-import '../modules/home/bindings/home_binding.dart';
-import '../modules/home/views/home_view.dart';
 import '../modules/actions/snackbar/bindings/snackbar_binding.dart';
 import '../modules/actions/snackbar/views/snackbar_view.dart';
+import '../modules/color/bindings/color_binding.dart';
+import '../modules/color/views/color_view.dart';
+import '../modules/actions/dialog/bindings/dialog_binding.dart';
+import '../modules/actions/dialog/views/dialog_view.dart';
+import '../modules/home/bindings/home_binding.dart';
+import '../modules/home/views/home_view.dart';
 import '../modules/typography/bindings/typography_binding.dart';
 import '../modules/typography/views/typography_view.dart';
 
@@ -49,6 +51,11 @@ class AppPages {
       name: _Paths.SNACKBAR,
       page: () => const SnackbarView(),
       binding: SnackbarBinding(),
+    ),
+    GetPage(
+      name: _Paths.DIALOG,
+      page: () => const DialogView(),
+      binding: DialogBinding(),
     ),
     //***********************************************/
     // ******************  Others  ******************/
