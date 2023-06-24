@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 
 import '../core/util/color_manager.dart';
 import '../core/util/text_color_manager.dart';
+import '../core/util/variable_manager.dart';
 
 class SuccessSnackbar {
   static SnackbarController handle({String title = "Notification", String message = ""}) {
@@ -11,9 +12,10 @@ class SuccessSnackbar {
       message,
       colorText: TextColorManager.PRIMARY,
       margin: const EdgeInsets.all(10),
-      duration: const Duration(seconds: 5),
+      duration: const Duration(seconds: 4),
       backgroundColor: ColorManager.SECONDARY,
       snackPosition: SnackPosition.TOP,
+      borderRadius: VariableManager.edgeRadius,
       maxWidth: 400,
     );
   }
@@ -29,6 +31,7 @@ class ErrorSnackbar {
       duration: const Duration(seconds: 4),
       backgroundColor: ColorManager.DANGER,
       snackPosition: SnackPosition.TOP,
+      borderRadius: VariableManager.edgeRadius,
       maxWidth: 400,
     );
   }

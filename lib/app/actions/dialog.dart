@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import '../core/util/color_manager.dart';
 import '../core/util/font_size_manager.dart';
 import '../core/util/text_color_manager.dart';
+import '../core/util/variable_manager.dart';
 
 class ShowDialog {
   static handle({
@@ -18,7 +19,7 @@ class ShowDialog {
       middleTextStyle: const TextStyle(fontSize: 0),
       cancelTextColor: TextColorManager.PRIMARY,
       confirmTextColor: TextColorManager.ACCENT,
-      radius: 4,
+      radius: VariableManager.edgeRadius,
       textCancel: 'No',
       textConfirm: 'Yes',
       titlePadding: const EdgeInsets.only(top: 24),
@@ -49,13 +50,10 @@ class MessageDialog {
       buttonColor: ColorManager.ACCENT,
       cancelTextColor: TextColorManager.PRIMARY,
       confirmTextColor: TextColorManager.ACCENT,
-      radius: 4,
+      radius: VariableManager.edgeRadius,
       textCancel: 'No',
       textConfirm: 'Yes',
       titlePadding: const EdgeInsets.only(top: 24),
-      onCancel: () {
-        // Get.back();
-      },
       onConfirm: () {
         onConfirm();
         Get.back();
@@ -89,13 +87,10 @@ class ConfirmDialog {
       buttonColor: ColorManager.ACCENT,
       cancelTextColor: TextColorManager.PRIMARY,
       confirmTextColor: TextColorManager.ACCENT,
-      radius: 4,
+      radius: VariableManager.edgeRadius,
       textCancel: 'No',
       textConfirm: 'Yes',
       titlePadding: const EdgeInsets.only(top: 24),
-      onCancel: () {
-        // Get.back();
-      },
       onConfirm: () {
         onConfirm();
         Get.back();
@@ -118,13 +113,10 @@ class CustomDialog {
       buttonColor: ColorManager.ACCENT,
       cancelTextColor: TextColorManager.PRIMARY,
       confirmTextColor: TextColorManager.ACCENT,
-      radius: 4,
+      radius: VariableManager.edgeRadius,
       textCancel: 'No',
       textConfirm: 'Yes',
       titlePadding: const EdgeInsets.only(top: 24),
-      onCancel: () {
-        // Get.back();
-      },
       onConfirm: () {
         onConfirm();
         Get.back();

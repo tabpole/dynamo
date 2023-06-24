@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../core/util/color_manager.dart';
+import '../../core/util/variable_manager.dart';
 import '../atoms/icons.dart';
 import '../atoms/texts.dart';
 
@@ -32,7 +33,7 @@ class CircularIconTextCard extends StatelessWidget {
         width: 200,
         decoration: BoxDecoration(
           color: color,
-          borderRadius: BorderRadius.circular(8),
+          borderRadius: BorderRadius.circular(VariableManager.edgeRadius),
           border: Border.all(
             width: 1,
             color: ColorManager.SECONDARY_ALT,
