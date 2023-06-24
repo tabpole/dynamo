@@ -17,6 +17,7 @@ class SnackbarView extends GetView<AppSnackbarController> {
       ),
       body: SingleChildScrollView(
         child: AppContainer(
+          height: MediaQuery.of(context).size.height,
           child: Center(
             child: Wrap(
               spacing: 16,
