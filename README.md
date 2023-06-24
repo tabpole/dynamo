@@ -1,16 +1,54 @@
-# dynamo
+# Dynamo
 
-A new Flutter project.
+A new design pattern for flutter project using getx & getx pattern.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+### Design pattern
 
-A few resources to get you started if this is your first Flutter project:
+- Color pallette ( 60-30-10 rule )
+- Typography
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Core features
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Theme Customization
+- Asset Management
+- Api Provider
+- Internet Connection Checking
+- Dataset for Local Development
+- Getx Service Management
+
+### Atoms
+
+- Icons
+- Texts
+
+### Elements
+
+- Cards
+
+### Actions
+
+- Snackbar
+
+## Upcoming features
+
+- Database Provider
+- Accordion
+- Alerts
+- Avatar
+- Badges
+- Buttons
+- Carousel
+- Chips
+- Collapse
+- Dropdown
+- Gallery
+- Jumbotron
+- Link
+- List Group
+- Modal
+- progress
+- popover
+- rating
+- loading

@@ -5,6 +5,6 @@ import 'api_provider.dart';
 class AuthApiProvider extends ApiProvider {
   AuthApiProvider()
       : super(headers: {
-          'Authorization': 'Bearer ' + GetStorage().read('token'),
+          'Authorization': 'Bearer ${GetStorage().read('token')}',
         });
 }
