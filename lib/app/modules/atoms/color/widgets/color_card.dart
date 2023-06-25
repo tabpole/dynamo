@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../widgets/atoms/texts.dart';
+import '../../../../widgets/atoms/texts.dart';
 
 class ColorCard extends StatelessWidget {
   final Color color;

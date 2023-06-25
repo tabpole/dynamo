@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../core/util/color_manager.dart';
-import '../../../widgets/atoms/texts.dart';
+import '../../../../core/util/color_manager.dart';
+import '../../../../widgets/atoms/texts.dart';
 import '../widgets/color_card.dart';
 
 class Primary extends StatelessWidget {

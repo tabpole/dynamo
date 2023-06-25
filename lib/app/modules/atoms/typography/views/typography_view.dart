@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
-import '../../../widgets/app_container.dart';
-import '../../../widgets/atoms/texts.dart';
+import '../../../../widgets/app_container.dart';
+import '../../../../widgets/atoms/texts.dart';
 import '../controllers/typography_controller.dart';
 import 'text_builder.dart';
 

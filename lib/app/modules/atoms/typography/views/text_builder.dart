@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../../widgets/atoms/texts.dart';
+import '../../../../widgets/atoms/texts.dart';
 import '../controllers/typography_controller.dart';
 
 enum TextType {

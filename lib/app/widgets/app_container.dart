@@ -20,7 +20,7 @@ class AppContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     double hPadding = 24;
     double vPadding = 24;
-    double maxWidth = 1200;
+    double maxWidth = 1000;
 
     if (type == ContainerType.REGULAR && MediaQuery.of(context).size.width > maxWidth) {
       hPadding = (MediaQuery.of(context).size.width - maxWidth) / 2;
