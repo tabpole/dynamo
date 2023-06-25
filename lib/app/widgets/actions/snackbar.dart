@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../core/util/color_manager.dart';
-import '../core/util/text_color_manager.dart';
-import '../core/util/variable_manager.dart';
+import '../../core/util/color_manager.dart';
+import '../../core/util/text_color_manager.dart';
+import '../../core/util/variable_manager.dart';
 
 //*********************************************/
 // ************* Success Snackbar *************/

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../core/util/color_manager.dart';
-import '../core/util/font_size_manager.dart';
-import '../core/util/text_color_manager.dart';
-import '../core/util/variable_manager.dart';
-import '../widgets/atoms/icons.dart';
+import '../../core/util/color_manager.dart';
+import '../../core/util/font_size_manager.dart';
+import '../../core/util/text_color_manager.dart';
+import '../../core/util/variable_manager.dart';
+import '../atoms/icons.dart';
 
 //*********************************************/
 // ************* Show   Dialog    *************/

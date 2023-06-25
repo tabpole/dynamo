@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import '../../../../widgets/app_container.dart';
 import '../../../../widgets/atoms/texts.dart';
 import '../controllers/typography_controller.dart';
+import '../enums/text_type_enum.dart';
 import 'text_builder.dart';
 
 class TypographyView extends GetView<TypographyController> {

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:top_modal_sheet/top_modal_sheet.dart';
 
-import '../widgets/atoms/icons.dart';
-import '../widgets/atoms/texts.dart';
+import '../atoms/icons.dart';
+import '../atoms/texts.dart';
 
 //*********************************************/
 // ************* Sheet Action     *************/

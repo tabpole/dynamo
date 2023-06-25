@@ -1,24 +1,9 @@
-// ignore_for_file: constant_identifier_names
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../../widgets/atoms/texts.dart';
 import '../controllers/typography_controller.dart';
-
-enum TextType {
-  TinyText,
-  SmallText,
-  SmallBoldText,
-  RegularText,
-  RegularBoldText,
-  LargeText,
-  LargeBoldText,
-  XLargeText,
-  XLargeBoldText,
-  XXLargeText,
-  XXLargeBoldText,
-}
+import '../enums/text_type_enum.dart';
 
 class TextBuilder extends GetView<TypographyController> {
   final TextType textType;

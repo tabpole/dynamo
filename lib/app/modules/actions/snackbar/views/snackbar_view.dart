@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
-import '../../../../actions/snackbar.dart';
+import '../../../../widgets/actions/snackbar.dart';
 import '../../../../widgets/app_container.dart';
 import '../../../../widgets/elements/cards.dart';
 import '../controllers/app_snackbar_controller.dart';

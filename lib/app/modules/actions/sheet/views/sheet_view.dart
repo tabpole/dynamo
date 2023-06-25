@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
-import '../../../../actions/sheet.dart';
+import '../../../../widgets/actions/sheet.dart';
 
 import '../../../../core/util/color_manager.dart';
 import '../../../../widgets/app_container.dart';
