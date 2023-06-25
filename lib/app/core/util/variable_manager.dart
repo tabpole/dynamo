@@ -2,4 +2,5 @@
 
 class VariableManager {
   static const double edgeRadius = 4;
+  static const double buttonEdgeRadius = 25;
 }

@@ -2,8 +2,11 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
-import '../../../widgets/app_container.dart';
-import '../../../widgets/elements/cards.dart';
+import '../../../../actions/sheet.dart';
+
+import '../../../../core/util/color_manager.dart';
+import '../../../../widgets/app_container.dart';
+import '../../../../widgets/elements/cards.dart';
 import '../controllers/sheet_controller.dart';
 
 class SheetView extends GetView<SheetController> {
@@ -28,15 +31,27 @@ class SheetView extends GetView<SheetController> {
                 ),
                 CircularIconTextCard(
                   title: 'Bottom Sheet',
-                  onTap: () {},
+                  onTap: () => ShowBottomSheet.handle(
+                    child: Container(
+                      height: 300,
+                      color: ColorManager.ACCENT_LIGHT,
+                    ),
+                  ),
                 ),
                 CircularIconTextCard(
-                  title: 'Top Confirm Sheet',
-                  onTap: () {},
+                  title: 'Confirm Top Sheet',
+                  onTap: () => ConfirmBottomSheet.handle(onConfirm: () {}),
                 ),
                 CircularIconTextCard(
-                  title: 'Bottom Confirm Sheet',
-                  onTap: () {},
+                  title: 'Confirm Bottom  Sheet',
+                  onTap: () => ConfirmBottomSheet.handle(onConfirm: () {}),
+                ),
+                CircularIconTextCard(
+                  title: 'Confirm Message Bottom Sheet',
+                  onTap: () => ConfirmMessageBottomSheet.handle(
+                    onConfirm: () {},
+                    message: 'Confirm Message',
+                  ),
                 ),
               ],
             ),

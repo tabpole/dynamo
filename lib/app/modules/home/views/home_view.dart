@@ -21,6 +21,9 @@ class HomeView extends GetView<HomeController> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
+              ElevatedButton(onPressed: () {}, child: const Text('Elevated')),
+              const SizedBox(height: 16),
+              OutlinedButton(onPressed: () {}, child: const Text('Outline')),
               const SizedBox(height: 48),
               const XLargeBoldText('Atoms'),
               const SizedBox(height: 16),

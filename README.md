@@ -17,6 +17,7 @@ A new design pattern for flutter project using getx & getx pattern.
 - Internet Connection Checking
 - Dataset for Local Development
 - Getx Service Management
+- Get Storage ( Local Storage )
 
 ### Atoms
 

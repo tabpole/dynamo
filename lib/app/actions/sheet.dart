@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../widgets/atoms/texts.dart';
+
 class ConfirmationBottomSheet {
   static handle({
     String title = "Confirm",
@@ -81,6 +83,110 @@ class ConfirmationBottomSheet {
       elevation: 6,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(2),
+      ),
+    );
+  }
+}
+
+class ShowBottomSheet {
+  static handle({
+    required Widget child,
+  }) {
+    return Get.bottomSheet(
+      Container(padding: const EdgeInsets.all(16.0), child: child),
+      backgroundColor: Colors.white,
+      elevation: 2,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(2),
+      ),
+    );
+  }
+}
+
+class ConfirmBottomSheet {
+  static handle({
+    String title = "Are you sure ?",
+    required VoidCallback onConfirm,
+  }) {
+    return Get.bottomSheet(
+      Container(
+        height: 200,
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            LargeBoldText(title),
+            const SizedBox(height: 32),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                OutlinedButton(
+                  onPressed: () => Get.back(),
+                  child: const Text('No'),
+                ),
+                const SizedBox(width: 16),
+                ElevatedButton(
+                  onPressed: () {
+                    onConfirm();
+                    Get.back();
+                  },
+                  child: const Text("Yes"),
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+      backgroundColor: Colors.white,
+      elevation: 2,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(4),
+      ),
+    );
+  }
+}
+
+class ConfirmMessageBottomSheet {
+  static handle({
+    String title = "Are you sure ?",
+    String message = "",
+    required VoidCallback onConfirm,
+  }) {
+    return Get.bottomSheet(
+      Container(
+        height: 300,
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            LargeBoldText(title),
+            const SizedBox(height: 16),
+            RegularText(message),
+            const SizedBox(height: 32),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                OutlinedButton(
+                  onPressed: () => Get.back(),
+                  child: const Text('No'),
+                ),
+                const SizedBox(width: 16),
+                ElevatedButton(
+                  onPressed: () {
+                    onConfirm();
+                    Get.back();
+                  },
+                  child: const Text("Yes"),
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+      backgroundColor: Colors.white,
+      elevation: 2,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(4),
       ),
     );
   }
