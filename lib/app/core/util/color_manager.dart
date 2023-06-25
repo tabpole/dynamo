@@ -32,7 +32,7 @@ class ColorManager {
   static const Color BRAND_GAMMA = Color(0xff6a00f4);
   static const Color BRAND_DELTA = Color(0xff780a1d);
 
-  // When Necessary
+  // Attention Colors
   static const Color SUCCESS = Color(0xff00B922);
   static const Color INFO = Color(0xff864ADB);
   static const Color WARNING = Color(0xffFFb71b);

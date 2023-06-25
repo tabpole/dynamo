@@ -21,11 +21,11 @@ class Accent extends StatelessWidget {
           children: [
             ColorCard(
               color: ColorManager.ACCENT,
-              code: 'Main',
+              name: 'Main',
             ),
             ColorCard(
               color: ColorManager.ACCENT_ALT,
-              code: 'Alternative',
+              name: 'Alternative',
             ),
           ],
         ),
@@ -39,19 +39,19 @@ class Accent extends StatelessWidget {
             // Example : Icon Color
             ColorCard(
               color: ColorManager.BRAND_ALPHA,
-              code: 'Alpha',
+              name: 'Alpha',
             ),
             ColorCard(
               color: ColorManager.BRAND_BETA,
-              code: 'Beta',
+              name: 'Beta',
             ),
             ColorCard(
               color: ColorManager.BRAND_GAMMA,
-              code: 'Gamma',
+              name: 'Gamma',
             ),
             ColorCard(
               color: ColorManager.BRAND_DELTA,
-              code: 'Delta',
+              name: 'Delta',
             ),
           ],
         ),

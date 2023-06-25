@@ -6,6 +6,7 @@ import '../../../../widgets/app_container.dart';
 import '../controllers/color_controller.dart';
 
 import 'accent.dart';
+import 'attention.dart';
 import 'primary.dart';
 import 'secondary.dart';
 
@@ -28,6 +29,9 @@ class ColorView extends GetView<ColorController> {
                 Secondary(),
                 SizedBox(height: 64),
                 Accent(),
+                SizedBox(height: 64),
+                Attention(),
+                SizedBox(height: 64),
               ],
             ),
           ),

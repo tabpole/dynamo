@@ -21,11 +21,11 @@ class Primary extends StatelessWidget {
           children: [
             ColorCard(
               color: ColorManager.PRIMARY,
-              code: 'Main',
+              name: 'Main',
             ),
             ColorCard(
               color: ColorManager.PRIMARY_ALT,
-              code: 'Alternative',
+              name: 'Alternative',
             ),
           ],
         ),
