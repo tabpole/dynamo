@@ -5,7 +5,11 @@ import '../core/util/color_manager.dart';
 import '../core/util/font_size_manager.dart';
 import '../core/util/text_color_manager.dart';
 import '../core/util/variable_manager.dart';
+import '../widgets/atoms/icons.dart';
 
+//*********************************************/
+// ************* Show   Dialog    *************/
+//*********************************************/
 class ShowDialog {
   static handle({
     String title = "Are you sure ?",
@@ -31,10 +35,13 @@ class ShowDialog {
   }
 }
 
+//*********************************************/
+// ************* Message Dialog   *************/
+//*********************************************/
 class MessageDialog {
   static handle({
     String title = "Are you sure ?",
-    String message = "sdfasdf",
+    String message = "",
     required Function() onConfirm,
   }) {
     return Get.defaultDialog(
@@ -62,6 +69,9 @@ class MessageDialog {
   }
 }
 
+//*********************************************/
+// ************* Confirm Dialog   *************/
+//*********************************************/
 class ConfirmDialog {
   static handle({
     String title = "Are you sure ?",
@@ -69,19 +79,7 @@ class ConfirmDialog {
   }) {
     return Get.defaultDialog(
       title: title,
-      content: Container(
-        margin: const EdgeInsets.all(16),
-        padding: const EdgeInsets.all(16),
-        decoration: BoxDecoration(
-          shape: BoxShape.circle,
-          color: ColorManager.ACCENT_LIGHT,
-        ),
-        child: const Icon(
-          Icons.question_mark_sharp,
-          size: 40,
-          color: ColorManager.ACCENT,
-        ),
-      ),
+      content: const CircularLargeIcon(Icons.question_mark_sharp),
       contentPadding: const EdgeInsets.all(16),
       barrierDismissible: true,
       buttonColor: ColorManager.ACCENT,
@@ -99,6 +97,9 @@ class ConfirmDialog {
   }
 }
 
+//*********************************************/
+// ************* Custom Dialog    *************/
+//*********************************************/
 class CustomDialog {
   static handle({
     String title = "Are you sure ?",

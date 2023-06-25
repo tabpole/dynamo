@@ -14,16 +14,13 @@ class HomeView extends GetView<HomeController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Tablark'),
+        title: const Text('Dynamo'),
       ),
       body: SingleChildScrollView(
         child: AppContainer(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              ElevatedButton(onPressed: () {}, child: const Text('Elevated')),
-              const SizedBox(height: 16),
-              OutlinedButton(onPressed: () {}, child: const Text('Outline')),
               const SizedBox(height: 48),
               const XLargeBoldText('Atoms'),
               const SizedBox(height: 16),
