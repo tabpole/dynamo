@@ -24,16 +24,39 @@ class SnackbarView extends GetView<AppSnackbarController> {
               runSpacing: 16,
               children: [
                 CircularIconTextCard(
-                  title: 'Success',
-                  onTap: () => SuccessSnackbar.handle(
+                  title: 'Accent',
+                  onTap: () => AccentSnackbar.handle(
                     title: 'Example Title',
                     message: "Example message",
                   ),
                 ),
                 CircularIconTextCard(
-                  title: 'Error',
-                  onTap: () => ErrorSnackbar.handle(
-                    title: 'Example Title',
+                  title: 'Success',
+                  onTap: () => SuccessSnackbar.handle(
+                    message: "Example message",
+                  ),
+                ),
+                CircularIconTextCard(
+                  title: 'Info',
+                  onTap: () => InfoSnackbar.handle(
+                    message: "Example message",
+                  ),
+                ),
+                CircularIconTextCard(
+                  title: 'Warning',
+                  onTap: () => WarningSnackbar.handle(
+                    message: "Example message",
+                  ),
+                ),
+                CircularIconTextCard(
+                  title: 'Danger',
+                  onTap: () => DangerSnackbar.handle(
+                    message: "Example message",
+                  ),
+                ),
+                CircularIconTextCard(
+                  title: 'Disabaled',
+                  onTap: () => DisabaledSnackbar.handle(
                     message: "Example message",
                   ),
                 ),

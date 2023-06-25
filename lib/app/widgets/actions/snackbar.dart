@@ -2,45 +2,111 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../core/util/color_manager.dart';
-import '../../core/util/text_color_manager.dart';
 import '../../core/util/variable_manager.dart';
+import '../atoms/texts.dart';
 
 //*********************************************/
-// ************* Success Snackbar *************/
+// ************* Accent Snackbar *************/
 //*********************************************/
-class SuccessSnackbar {
-  static SnackbarController handle({String title = "Notification", String message = ""}) {
+class AccentSnackbar {
+  static SnackbarController handle({
+    String title = "Notification",
+    String message = "",
+    Color color = ColorManager.ACCENT,
+  }) {
     return Get.snackbar(
       title,
       message,
-      colorText: TextColorManager.PRIMARY,
-      margin: const EdgeInsets.all(10),
+      titleText: RegularBoldText(title),
+      messageText: SmallText(message),
+      margin: const EdgeInsets.all(16),
       duration: const Duration(seconds: 4),
-      backgroundColor: ColorManager.ACCENT_LIGHT,
+      backgroundColor: color.withOpacity(0.1),
+      leftBarIndicatorColor: color,
       snackPosition: SnackPosition.TOP,
       borderRadius: VariableManager.edgeRadius,
       maxWidth: 400,
-      icon: const Icon(Icons.notifications_active_rounded),
+      instantInit: true,
     );
   }
 }
 
 //*********************************************/
-// *************  Error  Snackbar *************/
+// ************* Success Snackbar *************/
 //*********************************************/
-class ErrorSnackbar {
-  static SnackbarController handle({String title = "Error", String message = ""}) {
-    return Get.snackbar(
-      title,
-      message,
-      colorText: TextColorManager.PRIMARY,
-      margin: const EdgeInsets.all(10),
-      duration: const Duration(seconds: 4),
-      backgroundColor: ColorManager.SECONDARY,
-      snackPosition: SnackPosition.TOP,
-      borderRadius: VariableManager.edgeRadius,
-      maxWidth: 400,
-      icon: const Icon(Icons.notifications_active_rounded),
+class SuccessSnackbar {
+  static SnackbarController handle({
+    String title = "Success",
+    String message = "",
+  }) {
+    return AccentSnackbar.handle(
+      title: title,
+      message: message,
+      color: ColorManager.SUCCESS,
+    );
+  }
+}
+
+//*********************************************/
+//***************  Info  Snackbar *************/
+//*********************************************/
+class InfoSnackbar {
+  static SnackbarController handle({
+    String title = "Information",
+    String message = "",
+  }) {
+    return AccentSnackbar.handle(
+      title: title,
+      message: message,
+      color: ColorManager.INFO,
+    );
+  }
+}
+
+//*********************************************/
+//**************  Warning  Snackbar ***********/
+//*********************************************/
+class WarningSnackbar {
+  static SnackbarController handle({
+    String title = "Warning",
+    String message = "",
+  }) {
+    return AccentSnackbar.handle(
+      title: title,
+      message: message,
+      color: ColorManager.WARNING,
+    );
+  }
+}
+
+//*********************************************/
+//*************  Danger  Snackbar *************/
+//*********************************************/
+class DangerSnackbar {
+  static SnackbarController handle({
+    String title = "Danger",
+    String message = "",
+  }) {
+    return AccentSnackbar.handle(
+      title: title,
+      message: message,
+      color: ColorManager.DANGER,
+    );
+  }
+}
+
+//*********************************************/
+//*************  Danger  Snackbar *************/
+//*********************************************/
+class DisabaledSnackbar {
+  static SnackbarController handle({
+    String title = "Disabaled",
+    String message = "",
+  }) {
+    return AccentSnackbar.handle(
+      title: title,
+      message: message,
+      color: ColorManager.DISABLED,
     );
   }
 }

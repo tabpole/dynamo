@@ -37,5 +37,10 @@ class ColorManager {
   static const Color INFO = Color(0xff864ADB);
   static const Color WARNING = Color(0xffFFb71b);
   static const Color DANGER = Color(0xffFF4015);
-  static const Color DISABLED = Color(0xffF3F4F2);
+  static const Color DISABLED = Color(0xffADB5BD);
+
+  static Color SUCCESS_LIGHT = SUCCESS.withOpacity(0.1);
+  static Color INFO_LIGHT = INFO.withOpacity(0.1);
+  static Color WARNING_LIGHT = WARNING.withOpacity(0.1);
+  static Color DANGER_LIGHT = DANGER.withOpacity(0.1);
 }
