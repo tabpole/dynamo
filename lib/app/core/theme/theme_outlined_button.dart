@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../util/color_manager.dart';
-import '../util/font_size_manager.dart';
+import '../util/font_manager.dart';
 import '../util/text_color_manager.dart';
 import '../util/variable_manager.dart';
 
@@ -13,7 +13,7 @@ class ThemeOutlinedButton {
         borderRadius: BorderRadius.circular(VariableManager.buttonEdgeRadius),
       ),
       textStyle: const TextStyle(
-        fontSize: FontSizeManager.REGULAR,
+        fontSize: FontManager.REGULAR,
       ),
       side: const BorderSide(
         color: ColorManager.ACCENT,

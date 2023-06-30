@@ -17,6 +17,7 @@ dependencies:
   internet_connection_checker: ^1.0.0+1
   top_modal_sheet: ^2.0.1
   geolocator: ^9.0.2
+  google_fonts: ^5.1.0
   # Example Dependencies
 
 dev_dependencies: 
@@ -32,17 +33,17 @@ flutter:
     - lib/assets/graphics/png/
     - lib/assets/graphics/svg/
 
-  fonts:
-  - family: Quicksand
-    fonts:
-      - asset: lib/assets/fonts/Quicksand-Light.ttf
-        weight: 300
-      - asset: lib/assets/fonts/Quicksand-Regular.ttf
-        weight: 400
-      - asset: lib/assets/fonts/Quicksand-Medium.ttf
-        weight: 500
-      - asset: lib/assets/fonts/Quicksand-SemiBold.ttf
-        weight: 600
-      - asset: lib/assets/fonts/Quicksand-Bold.ttf
-        weight: 700
+  # fonts:
+  # - family: Quicksand
+  #   fonts:
+  #     - asset: lib/assets/fonts/Quicksand-Light.ttf
+  #       weight: 300
+  #     - asset: lib/assets/fonts/Quicksand-Regular.ttf
+  #       weight: 400
+  #     - asset: lib/assets/fonts/Quicksand-Medium.ttf
+  #       weight: 500
+  #     - asset: lib/assets/fonts/Quicksand-SemiBold.ttf
+  #       weight: 600
+  #     - asset: lib/assets/fonts/Quicksand-Bold.ttf
+  #       weight: 700
 

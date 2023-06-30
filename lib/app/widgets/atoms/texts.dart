@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
-import '../../core/util/font_size_manager.dart';
+import '../../core/util/font_manager.dart';
 import '../../core/util/text_color_manager.dart';
 
 //*********************************************/
@@ -20,7 +21,7 @@ class TinyText extends StatelessWidget {
     return Text(
       text!,
       style: TextStyle(
-        fontSize: FontSizeManager.TINY,
+        fontSize: FontManager.TINY,
         fontWeight: FontWeight.w700,
         color: color,
       ),
@@ -45,7 +46,7 @@ class SmallText extends StatelessWidget {
     return Text(
       text!,
       style: TextStyle(
-        fontSize: FontSizeManager.SMALL,
+        fontSize: FontManager.SMALL,
         fontWeight: FontWeight.w400,
         color: color,
       ),
@@ -67,7 +68,7 @@ class SmallBoldText extends StatelessWidget {
     return Text(
       text!,
       style: TextStyle(
-        fontSize: FontSizeManager.SMALL,
+        fontSize: FontManager.SMALL,
         fontWeight: FontWeight.w600,
         color: color,
       ),
@@ -92,7 +93,7 @@ class RegularText extends StatelessWidget {
     return Text(
       text!,
       style: TextStyle(
-        fontSize: FontSizeManager.REGULAR,
+        fontSize: FontManager.REGULAR,
         fontWeight: FontWeight.w400,
         color: color,
       ),
@@ -114,7 +115,7 @@ class RegularBoldText extends StatelessWidget {
     return Text(
       text!,
       style: TextStyle(
-        fontSize: FontSizeManager.REGULAR,
+        fontSize: FontManager.REGULAR,
         fontWeight: FontWeight.w600,
         color: color,
       ),
@@ -139,7 +140,7 @@ class LargeText extends StatelessWidget {
     return Text(
       text!,
       style: TextStyle(
-        fontSize: FontSizeManager.LARGE,
+        fontSize: FontManager.LARGE,
         fontWeight: FontWeight.w400,
         color: color,
       ),
@@ -161,7 +162,7 @@ class LargeBoldText extends StatelessWidget {
     return Text(
       text!,
       style: TextStyle(
-        fontSize: FontSizeManager.LARGE,
+        fontSize: FontManager.LARGE,
         fontWeight: FontWeight.w600,
         color: color,
       ),
@@ -186,7 +187,7 @@ class XLargeText extends StatelessWidget {
     return Text(
       text!,
       style: TextStyle(
-        fontSize: FontSizeManager.XLARGE,
+        fontSize: FontManager.XLARGE,
         fontWeight: FontWeight.w400,
         color: color,
       ),
@@ -207,8 +208,13 @@ class XLargeBoldText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text!,
+      // style: GoogleFonts.robotoMono(
+      //   fontSize: FontManager.XLARGE,
+      //   fontWeight: FontWeight.w600,
+      //   color: color,
+      // )
       style: TextStyle(
-        fontSize: FontSizeManager.XLARGE,
+        fontSize: FontManager.XLARGE,
         fontWeight: FontWeight.w600,
         color: color,
       ),
@@ -233,7 +239,7 @@ class XXLargeText extends StatelessWidget {
     return Text(
       text!,
       style: TextStyle(
-        fontSize: FontSizeManager.XXLARGE,
+        fontSize: FontManager.XXLARGE,
         fontWeight: FontWeight.w400,
         color: color,
       ),
@@ -255,7 +261,7 @@ class XXLargeBoldText extends StatelessWidget {
     return Text(
       text!,
       style: TextStyle(
-        fontSize: FontSizeManager.XXLARGE,
+        fontSize: FontManager.XXLARGE,
         fontWeight: FontWeight.w600,
         color: color,
       ),
