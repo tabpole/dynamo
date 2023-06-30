@@ -14,7 +14,7 @@ class TinyText extends StatelessWidget {
   const TinyText(
     this.text, {
     super.key,
-    this.color = TextColorManager.PRIMARY,
+    this.color = TextColorManager.PRIMARY_REGULAR,
   });
 
   @override
@@ -63,7 +63,7 @@ class SmallText extends StatelessWidget {
   const SmallText(
     this.text, {
     super.key,
-    this.color = TextColorManager.PRIMARY,
+    this.color = TextColorManager.PRIMARY_REGULAR,
   });
 
   @override
@@ -112,7 +112,7 @@ class RegularText extends StatelessWidget {
   const RegularText(
     this.text, {
     super.key,
-    this.color = TextColorManager.PRIMARY_LIGHT,
+    this.color = TextColorManager.PRIMARY_REGULAR,
   });
 
   @override
@@ -135,7 +135,7 @@ class RegularBoldText extends StatelessWidget {
   const RegularBoldText(
     this.text, {
     super.key,
-    this.color = TextColorManager.PRIMARY_REGULAR,
+    this.color = TextColorManager.PRIMARY,
   });
 
   @override

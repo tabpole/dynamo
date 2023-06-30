@@ -11,9 +11,9 @@ class Accent extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Column(
       children: [
-        XLargeTitleText('10%'),
+        LargeTitleText('10%'),
         SizedBox(height: 16),
-        TitleText('Accent '),
+        TitleText('Accent'),
         SizedBox(height: 16),
         Wrap(
           alignment: WrapAlignment.start,
@@ -30,7 +30,7 @@ class Accent extends StatelessWidget {
           ],
         ),
         SizedBox(height: 16),
-        TitleText('Brand '),
+        TitleText('Brand'),
         SizedBox(height: 16),
         Wrap(
           alignment: WrapAlignment.start,

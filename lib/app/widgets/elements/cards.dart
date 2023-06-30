@@ -47,7 +47,7 @@ class CircularIconTextCard extends StatelessWidget {
               color: iconColor,
             ),
             const SizedBox(height: 8),
-            RegularBoldText(title),
+            RegularText(title),
           ],
         ),
       ),

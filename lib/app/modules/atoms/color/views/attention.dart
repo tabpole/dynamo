@@ -11,7 +11,7 @@ class Attention extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const XLargeTitleText('More'),
+        const LargeTitleText('More'),
         const SizedBox(height: 16),
         const TitleText('Attention Color'),
         const SizedBox(height: 16),

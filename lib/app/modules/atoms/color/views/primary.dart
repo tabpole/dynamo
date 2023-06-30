@@ -11,7 +11,7 @@ class Primary extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Column(
       children: [
-        XLargeTitleText('60%'),
+        LargeTitleText('60%'),
         SizedBox(height: 8),
         TitleText('Primary '),
         SizedBox(height: 16),

@@ -11,9 +11,9 @@ class Secondary extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const XLargeTitleText('30%'),
+        const LargeTitleText('30%'),
         const SizedBox(height: 16),
-        const TitleText('Secondary '),
+        const TitleText('Secondary'),
         const SizedBox(height: 16),
         const Wrap(
           alignment: WrapAlignment.start,
