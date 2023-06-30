@@ -1,70 +1,57 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../core/util/color_manager.dart';
-import '../../core/util/font_size_manager.dart';
-import '../../core/util/text_color_manager.dart';
 import '../../core/util/variable_manager.dart';
 import '../atoms/icons.dart';
+import '../atoms/texts.dart';
 
 //*********************************************/
 // ************* Show   Dialog    *************/
 //*********************************************/
 class ShowDialog {
   static handle({
-    String title = "Are you sure ?",
+    String title = "Are you sure?",
+    String? message,
+    Widget? child,
+    double maxWidth = 400,
     required Function() onConfirm,
   }) {
     return Get.defaultDialog(
-      title: title,
-      contentPadding: const EdgeInsets.all(16),
+      title: '',
+      titleStyle: const TextStyle(fontSize: 0),
       barrierDismissible: true,
-      buttonColor: ColorManager.ACCENT,
-      middleTextStyle: const TextStyle(fontSize: 0),
-      cancelTextColor: TextColorManager.PRIMARY,
-      confirmTextColor: TextColorManager.ACCENT,
       radius: VariableManager.edgeRadius,
-      textCancel: 'No',
-      textConfirm: 'Yes',
-      titlePadding: const EdgeInsets.only(top: 24),
-      onConfirm: () {
-        onConfirm();
-        Get.back();
-      },
-    );
-  }
-}
-
-//*********************************************/
-// ************* Message Dialog   *************/
-//*********************************************/
-class MessageDialog {
-  static handle({
-    String title = "Are you sure ?",
-    String message = "",
-    required Function() onConfirm,
-  }) {
-    return Get.defaultDialog(
-      title: title,
-      middleText: message,
-      middleTextStyle: const TextStyle(
-        fontSize: FontSizeManager.REGULAR,
-        fontWeight: FontWeight.w400,
-        color: TextColorManager.PRIMARY_REGULAR,
+      content: Container(
+        constraints: BoxConstraints(maxWidth: maxWidth),
+        padding: const EdgeInsets.fromLTRB(32, 16, 32, 16),
+        child: Column(
+          children: [
+            RegularBoldText(title),
+            const SizedBox(height: 8),
+            message != null ? RegularText(message) : Container(),
+            const SizedBox(height: 8),
+            child ?? Container(),
+            const SizedBox(height: 16),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                OutlinedButton(
+                  onPressed: () => Get.back(),
+                  child: const Text('No'),
+                ),
+                const SizedBox(width: 8),
+                ElevatedButton(
+                  onPressed: () {
+                    onConfirm();
+                    Get.back();
+                  },
+                  child: const Text('Yes'),
+                ),
+              ],
+            )
+          ],
+        ),
       ),
-      contentPadding: const EdgeInsets.all(16),
-      barrierDismissible: true,
-      buttonColor: ColorManager.ACCENT,
-      cancelTextColor: TextColorManager.PRIMARY,
-      confirmTextColor: TextColorManager.ACCENT,
-      radius: VariableManager.edgeRadius,
-      textCancel: 'No',
-      textConfirm: 'Yes',
-      titlePadding: const EdgeInsets.only(top: 24),
-      onConfirm: () {
-        onConfirm();
-        Get.back();
-      },
     );
   }
 }
@@ -75,53 +62,14 @@ class MessageDialog {
 class ConfirmDialog {
   static handle({
     String title = "Are you sure ?",
+    String? message,
     required Function() onConfirm,
   }) {
-    return Get.defaultDialog(
+    return ShowDialog.handle(
       title: title,
-      content: const CircularLargeIcon(Icons.question_mark_sharp),
-      contentPadding: const EdgeInsets.all(16),
-      barrierDismissible: true,
-      buttonColor: ColorManager.ACCENT,
-      cancelTextColor: TextColorManager.PRIMARY,
-      confirmTextColor: TextColorManager.ACCENT,
-      radius: VariableManager.edgeRadius,
-      textCancel: 'No',
-      textConfirm: 'Yes',
-      titlePadding: const EdgeInsets.only(top: 24),
-      onConfirm: () {
-        onConfirm();
-        Get.back();
-      },
-    );
-  }
-}
-
-//*********************************************/
-// ************* Custom Dialog    *************/
-//*********************************************/
-class CustomDialog {
-  static handle({
-    String title = "Are you sure ?",
-    Widget? child,
-    required Function() onConfirm,
-  }) {
-    return Get.defaultDialog(
-      title: title,
-      content: child,
-      contentPadding: const EdgeInsets.all(16),
-      barrierDismissible: true,
-      buttonColor: ColorManager.ACCENT,
-      cancelTextColor: TextColorManager.PRIMARY,
-      confirmTextColor: TextColorManager.ACCENT,
-      radius: VariableManager.edgeRadius,
-      textCancel: 'No',
-      textConfirm: 'Yes',
-      titlePadding: const EdgeInsets.only(top: 24),
-      onConfirm: () {
-        onConfirm();
-        Get.back();
-      },
+      message: message,
+      child: const CircularLargeIcon(Icons.question_mark_sharp),
+      onConfirm: onConfirm,
     );
   }
 }

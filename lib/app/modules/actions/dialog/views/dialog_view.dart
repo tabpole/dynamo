@@ -31,21 +31,37 @@ class DialogView extends GetView<DialogController> {
                   ),
                 ),
                 CircularIconTextCard(
-                  title: 'Message Dialog',
-                  onTap: () => MessageDialog.handle(
+                  title: 'Custom Title Dialog',
+                  onTap: () => ShowDialog.handle(
+                    title: 'Are you 100% sure about this acton?',
                     onConfirm: () {},
+                  ),
+                ),
+                CircularIconTextCard(
+                  title: 'Message Dialog',
+                  onTap: () => ShowDialog.handle(
                     message: 'This action will dismiss the dialog.',
+                    onConfirm: () {},
+                  ),
+                ),
+                CircularIconTextCard(
+                  title: 'Long Message Dialog',
+                  onTap: () => ShowDialog.handle(
+                    message: controller.longText,
+                    onConfirm: () {},
                   ),
                 ),
                 CircularIconTextCard(
                   title: 'Confirm Dialog',
                   onTap: () => ConfirmDialog.handle(
+                    title: 'This is  confirmation dialog',
+                    // message: 'This is  confirmation dialog message',
                     onConfirm: () {},
                   ),
                 ),
                 CircularIconTextCard(
                   title: 'Custom Dialog',
-                  onTap: () => CustomDialog.handle(
+                  onTap: () => ShowDialog.handle(
                     onConfirm: () {},
                     child: Container(
                       height: 200,
