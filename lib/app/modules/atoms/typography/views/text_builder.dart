@@ -47,23 +47,23 @@ class TextBuilder extends GetView<TypographyController> {
       case TextType.RegularBoldText:
         textOutput = RegularBoldText(text, color: color);
         break;
-      case TextType.LargeText:
-        textOutput = LargeText(text, color: color);
+      case TextType.TitleText:
+        textOutput = TitleText(text, color: color);
         break;
-      case TextType.LargeBoldText:
-        textOutput = LargeBoldText(text, color: color);
+      case TextType.BoldTitleText:
+        textOutput = BoldTitleText(text, color: color);
         break;
-      case TextType.XLargeText:
-        textOutput = XLargeText(text, color: color);
+      case TextType.LargeTitleText:
+        textOutput = LargeTitleText(text, color: color);
         break;
-      case TextType.XLargeBoldText:
-        textOutput = XLargeBoldText(text, color: color);
+      case TextType.LargeBoldTitleText:
+        textOutput = LargeBoldTitleText(text, color: color);
         break;
-      case TextType.XXLargeText:
-        textOutput = XXLargeText(text, color: color);
+      case TextType.XLargeTitleText:
+        textOutput = XLargeTitleText(text, color: color);
         break;
-      case TextType.XXLargeBoldText:
-        textOutput = XXLargeBoldText(text, color: color);
+      case TextType.XLargeBoldTitleText:
+        textOutput = XLargeBoldTitleText(text, color: color);
         break;
     }
     return textOutput;

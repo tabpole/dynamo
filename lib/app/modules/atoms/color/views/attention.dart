@@ -11,9 +11,9 @@ class Attention extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const XXLargeText('Others'),
+        const XLargeTitleText('More'),
         const SizedBox(height: 16),
-        const LargeText('Attention Color'),
+        const TitleText('Attention Color'),
         const SizedBox(height: 16),
         const Wrap(
           alignment: WrapAlignment.start,
@@ -38,7 +38,7 @@ class Attention extends StatelessWidget {
           ],
         ),
         const SizedBox(height: 16),
-        const LargeText('Attention Light Color'),
+        const TitleText('Attention Light Color'),
         const SizedBox(height: 16),
         Wrap(
           alignment: WrapAlignment.start,

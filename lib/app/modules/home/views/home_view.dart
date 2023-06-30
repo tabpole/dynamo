@@ -22,7 +22,7 @@ class HomeView extends GetView<HomeController> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               const SizedBox(height: 48),
-              const XLargeBoldText('Atoms'),
+              const LargeBoldTitleText('Atoms'),
               const SizedBox(height: 16),
               Center(
                 child: Wrap(
@@ -43,7 +43,7 @@ class HomeView extends GetView<HomeController> {
                 ),
               ),
               const SizedBox(height: 48),
-              const XLargeBoldText('Elements'),
+              const LargeBoldTitleText('Elements'),
               const SizedBox(height: 16),
               Center(
                 child: Wrap(
@@ -58,7 +58,7 @@ class HomeView extends GetView<HomeController> {
                 ),
               ),
               const SizedBox(height: 48),
-              const XLargeBoldText('Actions'),
+              const LargeBoldTitleText('Actions'),
               const SizedBox(height: 16),
               Center(
                 child: Wrap(

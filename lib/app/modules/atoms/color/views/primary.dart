@@ -11,9 +11,9 @@ class Primary extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Column(
       children: [
-        XXLargeText('60%'),
+        XLargeTitleText('60%'),
         SizedBox(height: 8),
-        LargeText('Primary '),
+        TitleText('Primary '),
         SizedBox(height: 16),
         Wrap(
           alignment: WrapAlignment.start,

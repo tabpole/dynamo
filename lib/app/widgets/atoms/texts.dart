@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import '../../core/util/font_manager.dart';
 import '../../core/util/text_color_manager.dart';
 
+// Naming convention : SIZE___(IF)BOLD___(IF)TITLE___TEXT
+
 //*********************************************/
 // ****************** TINY ********************/
 //*********************************************/
@@ -44,7 +46,7 @@ class TinyBoldText extends StatelessWidget {
       text!,
       style: FontManager.GFONT_PRIMARY.copyWith(
         fontSize: FontManager.TINY,
-        fontWeight: FontManager.NORMAL,
+        fontWeight: FontManager.BOLD,
         letterSpacing: FontManager.SPACE_PRIMARY,
         color: color,
       ),
@@ -151,12 +153,12 @@ class RegularBoldText extends StatelessWidget {
 }
 
 //*********************************************/
-// ******************   Large   ***************/
+// ******************   Title   ***************/
 //*********************************************/
-class LargeText extends StatelessWidget {
+class TitleText extends StatelessWidget {
   final String? text;
   final Color color;
-  const LargeText(
+  const TitleText(
     this.text, {
     super.key,
     this.color = TextColorManager.PRIMARY_REGULAR,
@@ -176,10 +178,10 @@ class LargeText extends StatelessWidget {
   }
 }
 
-class LargeBoldText extends StatelessWidget {
+class BoldTitleText extends StatelessWidget {
   final String? text;
   final Color color;
-  const LargeBoldText(
+  const BoldTitleText(
     this.text, {
     super.key,
     this.color = TextColorManager.PRIMARY,
@@ -200,12 +202,12 @@ class LargeBoldText extends StatelessWidget {
 }
 
 //*********************************************/
-// ******************  XLarge   ***************/
+// **************** Large Title ***************/
 //*********************************************/
-class XLargeText extends StatelessWidget {
+class LargeTitleText extends StatelessWidget {
   final String? text;
   final Color color;
-  const XLargeText(
+  const LargeTitleText(
     this.text, {
     super.key,
     this.color = TextColorManager.PRIMARY_REGULAR,
@@ -225,10 +227,10 @@ class XLargeText extends StatelessWidget {
   }
 }
 
-class XLargeBoldText extends StatelessWidget {
+class LargeBoldTitleText extends StatelessWidget {
   final String? text;
   final Color color;
-  const XLargeBoldText(
+  const LargeBoldTitleText(
     this.text, {
     super.key,
     this.color = TextColorManager.PRIMARY,
@@ -251,10 +253,10 @@ class XLargeBoldText extends StatelessWidget {
 //*********************************************/
 // ******************  XXLarge  ***************/
 //*********************************************/
-class XXLargeText extends StatelessWidget {
+class XLargeTitleText extends StatelessWidget {
   final String? text;
   final Color color;
-  const XXLargeText(
+  const XLargeTitleText(
     this.text, {
     super.key,
     this.color = TextColorManager.PRIMARY_REGULAR,
@@ -274,10 +276,10 @@ class XXLargeText extends StatelessWidget {
   }
 }
 
-class XXLargeBoldText extends StatelessWidget {
+class XLargeBoldTitleText extends StatelessWidget {
   final String? text;
   final Color color;
-  const XXLargeBoldText(
+  const XLargeBoldTitleText(
     this.text, {
     super.key,
     this.color = TextColorManager.PRIMARY,
