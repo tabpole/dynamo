@@ -6,21 +6,27 @@ import 'package:google_fonts/google_fonts.dart';
 class FontManager {
   // Select Fonts
   static const String PRIMARY = "Quicksand";
-  static TextTheme PRIMARY_GOOGLE_FONT = GoogleFonts.quicksandTextTheme();
+
+  // Select Goolge Fonts
+  static TextTheme GFONT_PRIMARY_THEME = GoogleFonts.quicksandTextTheme();
+  static var GFONT_PRIMARY = GoogleFonts.quicksand();
+  static var GFONT_TITLE = GoogleFonts.lexendPeta();
 
   // Font Sizes
-  static const double TINY = 12;
+  // Primary
+  static const double TINY = 13;
   static const double SMALL = 15;
   static const double REGULAR = 18;
-  static const double LARGE = 22;
-  static const double XLARGE = 30;
-  static const double XXLARGE = 40;
+  // Title
+  static const double LARGE = 21;
+  static const double XLARGE = 24;
+  static const double XXLARGE = 32;
 
   // Font weight
   static const FontWeight NORMAL = FontWeight.w400;
   static const FontWeight BOLD = FontWeight.w600;
 
   // Font Letter Spacing
-  static const double NORMAL_SPACE = 1;
-  static const double Bold_SPACE = 1;
+  static const double SPACE_PRIMARY = 1;
+  static const double SPACE_TITLE = -3;
 }

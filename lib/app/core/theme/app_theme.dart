@@ -11,7 +11,7 @@ import 'theme_primary_swatch.dart';
 class AppTheme {
   final lightTheme = ThemeData(
     // fontFamily: FontManager.PRIMARY,
-    textTheme: FontManager.PRIMARY_GOOGLE_FONT,
+    textTheme: FontManager.GFONT_PRIMARY_THEME,
     appBarTheme: ThemeAppBar.data,
     elevatedButtonTheme: ThemeElevatedButton.data,
     outlinedButtonTheme: ThemeOutlinedButton.data,

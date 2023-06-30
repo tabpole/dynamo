@@ -2,6 +2,7 @@
 
 enum TextType {
   TinyText,
+  TinyBoldText,
   SmallText,
   SmallBoldText,
   RegularText,

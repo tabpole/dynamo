@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../../core/util/font_manager.dart';
 import '../../core/util/text_color_manager.dart';
@@ -20,9 +19,33 @@ class TinyText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text!,
-      style: TextStyle(
+      style: FontManager.GFONT_PRIMARY.copyWith(
         fontSize: FontManager.TINY,
-        fontWeight: FontWeight.w700,
+        fontWeight: FontManager.NORMAL,
+        letterSpacing: FontManager.SPACE_PRIMARY,
+        color: color,
+      ),
+    );
+  }
+}
+
+class TinyBoldText extends StatelessWidget {
+  final String? text;
+  final Color color;
+  const TinyBoldText(
+    this.text, {
+    super.key,
+    this.color = TextColorManager.PRIMARY,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      text!,
+      style: FontManager.GFONT_PRIMARY.copyWith(
+        fontSize: FontManager.TINY,
+        fontWeight: FontManager.NORMAL,
+        letterSpacing: FontManager.SPACE_PRIMARY,
         color: color,
       ),
     );
@@ -45,9 +68,10 @@ class SmallText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text!,
-      style: TextStyle(
+      style: FontManager.GFONT_PRIMARY.copyWith(
         fontSize: FontManager.SMALL,
-        fontWeight: FontWeight.w400,
+        fontWeight: FontManager.NORMAL,
+        letterSpacing: FontManager.SPACE_PRIMARY,
         color: color,
       ),
     );
@@ -67,9 +91,10 @@ class SmallBoldText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text!,
-      style: TextStyle(
+      style: FontManager.GFONT_PRIMARY.copyWith(
         fontSize: FontManager.SMALL,
-        fontWeight: FontWeight.w600,
+        fontWeight: FontManager.BOLD,
+        letterSpacing: FontManager.SPACE_PRIMARY,
         color: color,
       ),
     );
@@ -92,9 +117,10 @@ class RegularText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text!,
-      style: TextStyle(
+      style: FontManager.GFONT_PRIMARY.copyWith(
         fontSize: FontManager.REGULAR,
-        fontWeight: FontWeight.w400,
+        fontWeight: FontManager.NORMAL,
+        letterSpacing: FontManager.SPACE_PRIMARY,
         color: color,
       ),
     );
@@ -114,9 +140,10 @@ class RegularBoldText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text!,
-      style: TextStyle(
+      style: FontManager.GFONT_PRIMARY.copyWith(
         fontSize: FontManager.REGULAR,
-        fontWeight: FontWeight.w600,
+        fontWeight: FontManager.BOLD,
+        letterSpacing: FontManager.SPACE_PRIMARY,
         color: color,
       ),
     );
@@ -139,9 +166,10 @@ class LargeText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text!,
-      style: TextStyle(
+      style: FontManager.GFONT_TITLE.copyWith(
         fontSize: FontManager.LARGE,
-        fontWeight: FontWeight.w400,
+        fontWeight: FontManager.NORMAL,
+        letterSpacing: FontManager.SPACE_TITLE,
         color: color,
       ),
     );
@@ -161,9 +189,10 @@ class LargeBoldText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text!,
-      style: TextStyle(
+      style: FontManager.GFONT_TITLE.copyWith(
         fontSize: FontManager.LARGE,
-        fontWeight: FontWeight.w600,
+        fontWeight: FontManager.BOLD,
+        letterSpacing: FontManager.SPACE_TITLE,
         color: color,
       ),
     );
@@ -186,9 +215,10 @@ class XLargeText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text!,
-      style: TextStyle(
+      style: FontManager.GFONT_TITLE.copyWith(
         fontSize: FontManager.XLARGE,
-        fontWeight: FontWeight.w400,
+        fontWeight: FontManager.NORMAL,
+        letterSpacing: FontManager.SPACE_TITLE,
         color: color,
       ),
     );
@@ -208,14 +238,10 @@ class XLargeBoldText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text!,
-      // style: GoogleFonts.robotoMono(
-      //   fontSize: FontManager.XLARGE,
-      //   fontWeight: FontWeight.w600,
-      //   color: color,
-      // )
-      style: TextStyle(
+      style: FontManager.GFONT_TITLE.copyWith(
         fontSize: FontManager.XLARGE,
-        fontWeight: FontWeight.w600,
+        fontWeight: FontManager.BOLD,
+        letterSpacing: FontManager.SPACE_TITLE,
         color: color,
       ),
     );
@@ -223,7 +249,7 @@ class XLargeBoldText extends StatelessWidget {
 }
 
 //*********************************************/
-// ******************  XLarge   ***************/
+// ******************  XXLarge  ***************/
 //*********************************************/
 class XXLargeText extends StatelessWidget {
   final String? text;
@@ -238,9 +264,10 @@ class XXLargeText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text!,
-      style: TextStyle(
+      style: FontManager.GFONT_TITLE.copyWith(
         fontSize: FontManager.XXLARGE,
-        fontWeight: FontWeight.w400,
+        fontWeight: FontManager.NORMAL,
+        letterSpacing: FontManager.SPACE_TITLE,
         color: color,
       ),
     );
@@ -260,9 +287,10 @@ class XXLargeBoldText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text!,
-      style: TextStyle(
+      style: FontManager.GFONT_TITLE.copyWith(
         fontSize: FontManager.XXLARGE,
-        fontWeight: FontWeight.w600,
+        fontWeight: FontManager.BOLD,
+        letterSpacing: FontManager.SPACE_TITLE,
         color: color,
       ),
     );

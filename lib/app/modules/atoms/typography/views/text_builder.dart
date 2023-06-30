@@ -32,6 +32,9 @@ class TextBuilder extends GetView<TypographyController> {
       case TextType.TinyText:
         textOutput = TinyText(text, color: color);
         break;
+      case TextType.TinyBoldText:
+        textOutput = TinyBoldText(text, color: color);
+        break;
       case TextType.SmallText:
         textOutput = SmallText(text, color: color);
         break;

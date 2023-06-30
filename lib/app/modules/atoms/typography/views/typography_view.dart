@@ -29,6 +29,11 @@ class TypographyView extends GetView<TypographyController> {
                 TextBuilder(textType: TextType.TinyText),
                 SizedBox(height: 32),
 
+                TinyText('Tiny Bold'),
+                SizedBox(height: 8),
+                TextBuilder(textType: TextType.TinyBoldText),
+                SizedBox(height: 32),
+
                 SmallText('Small'),
                 SizedBox(height: 8),
                 TextBuilder(textType: TextType.SmallText),
