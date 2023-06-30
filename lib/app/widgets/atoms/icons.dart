@@ -53,7 +53,7 @@ class CircularLargeIcon extends StatelessWidget {
       ),
       child: Icon(
         icon,
-        size: 40,
+        size: 48,
         color: color,
       ),
     );

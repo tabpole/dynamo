@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:top_modal_sheet/top_modal_sheet.dart';
 
+import '../../core/util/variable_manager.dart';
 import '../atoms/icons.dart';
 import '../atoms/texts.dart';
 
@@ -79,9 +80,9 @@ class ConfirmTopSheet {
 }
 
 //*********************************************/
-//******** Confirm Message Top Sheet **********/
+//********    Message Top Sheet      **********/
 //*********************************************/
-class ConfirmMessageTopSheet {
+class MessageTopSheet {
   static handle({
     String title = "Are you sure ?",
     String message = "",
@@ -96,7 +97,7 @@ class ConfirmMessageTopSheet {
           children: [
             RegularBoldText(title),
             const SizedBox(height: 16),
-            RegularText(message),
+            SmallText(message),
             const SizedBox(height: 32),
             SheetAction(onConfirm: onConfirm),
           ],
@@ -117,8 +118,11 @@ class ShowBottomSheet {
       child,
       backgroundColor: Colors.white,
       elevation: 2,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(4),
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.only(
+          topRight: Radius.circular(VariableManager.edgeRadius),
+          topLeft: Radius.circular(VariableManager.edgeRadius),
+        ),
       ),
     );
   }
@@ -152,9 +156,9 @@ class ConfirmBottomSheet {
 }
 
 //*********************************************/
-// ******* Confirm Message Bottom Sheet *******/
+// *******      Message Bottom Sheet    *******/
 //*********************************************/
-class ConfirmMessageBottomSheet {
+class MessageBottomSheet {
   static handle({
     String title = "Are you sure ?",
     String message = "",
@@ -169,7 +173,7 @@ class ConfirmMessageBottomSheet {
           children: [
             RegularBoldText(title),
             const SizedBox(height: 16),
-            RegularText(message),
+            SmallText(message),
             const SizedBox(height: 32),
             SheetAction(onConfirm: onConfirm),
           ],

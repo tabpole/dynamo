@@ -39,8 +39,8 @@ class SheetView extends GetView<SheetController> {
                   onTap: () => ConfirmTopSheet.handle(onConfirm: () {}),
                 ),
                 CircularIconTextCard(
-                  title: 'Confirm Message Top Sheet',
-                  onTap: () => ConfirmMessageTopSheet.handle(
+                  title: 'Message Top Sheet',
+                  onTap: () => MessageTopSheet.handle(
                     onConfirm: () {},
                     message: 'This action is going to do this action.',
                   ),
@@ -59,8 +59,8 @@ class SheetView extends GetView<SheetController> {
                   onTap: () => ConfirmBottomSheet.handle(onConfirm: () {}),
                 ),
                 CircularIconTextCard(
-                  title: 'Confirm Message Bottom Sheet',
-                  onTap: () => ConfirmMessageBottomSheet.handle(
+                  title: 'Message Bottom Sheet',
+                  onTap: () => MessageBottomSheet.handle(
                     onConfirm: () {},
                     message: 'This action is going to do this action.',
                   ),

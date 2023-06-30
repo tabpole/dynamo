@@ -23,12 +23,12 @@ class ShowDialog {
       radius: VariableManager.edgeRadius,
       content: Container(
         constraints: BoxConstraints(maxWidth: maxWidth),
-        padding: const EdgeInsets.fromLTRB(32, 16, 32, 16),
+        padding: const EdgeInsets.fromLTRB(16, 16, 16, 16),
         child: Column(
           children: [
             RegularBoldText(title),
             const SizedBox(height: 8),
-            message != null ? RegularText(message) : Container(),
+            message != null ? SmallText(message) : Container(),
             const SizedBox(height: 8),
             child ?? Container(),
             const SizedBox(height: 16),

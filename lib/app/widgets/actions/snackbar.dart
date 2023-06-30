@@ -19,7 +19,7 @@ class AccentSnackbar {
       message,
       titleText: RegularBoldText(title),
       messageText: SmallText(message),
-      margin: const EdgeInsets.all(16),
+      margin: const EdgeInsets.all(8),
       duration: const Duration(seconds: 4),
       backgroundColor: color.withOpacity(0.1),
       leftBarIndicatorColor: color,
