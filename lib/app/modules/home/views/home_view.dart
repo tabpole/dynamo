@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-
 import 'package:get/get.dart';
 
-import '../../../routes/app_pages.dart';
 import '../../../widgets/app_container.dart';
-import '../../../widgets/atoms/texts.dart';
-import '../../../widgets/elements/cards.dart';
 import '../controllers/home_controller.dart';
+import 'action_section.dart';
+import 'element_section.dart';
+import 'atom_section.dart';
 
 class HomeView extends GetView<HomeController> {
   const HomeView({Key? key}) : super(key: key);
@@ -16,73 +15,17 @@ class HomeView extends GetView<HomeController> {
       appBar: AppBar(
         title: const Text('Dynamo'),
       ),
-      body: SingleChildScrollView(
+      body: const SingleChildScrollView(
         child: AppContainer(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              const SizedBox(height: 48),
-              const TitleText('Atoms'),
-              const SizedBox(height: 16),
-              Center(
-                child: Wrap(
-                  spacing: 16,
-                  runSpacing: 16,
-                  children: [
-                    CircularIconTextCard(
-                      title: 'Color',
-                      icon: Icons.color_lens_sharp,
-                      onTap: () => Get.toNamed(Routes.COLOR),
-                    ),
-                    CircularIconTextCard(
-                      title: 'Typography',
-                      icon: Icons.text_fields_rounded,
-                      onTap: () => Get.toNamed(Routes.TYPOGRAPHY),
-                    ),
-                  ],
-                ),
-              ),
-              const SizedBox(height: 48),
-              const TitleText('Elements'),
-              const SizedBox(height: 16),
-              Center(
-                child: Wrap(
-                  spacing: 16,
-                  runSpacing: 16,
-                  children: [
-                    for (int index = 0; index < 6; index++)
-                      const CircularIconTextCard(
-                        title: 'Example',
-                      ),
-                  ],
-                ),
-              ),
-              const SizedBox(height: 48),
-              const TitleText('Actions'),
-              const SizedBox(height: 16),
-              Center(
-                child: Wrap(
-                  spacing: 16,
-                  runSpacing: 16,
-                  children: [
-                    CircularIconTextCard(
-                      title: 'Snackbar',
-                      icon: Icons.notifications_active,
-                      onTap: () => Get.toNamed(Routes.SNACKBAR),
-                    ),
-                    CircularIconTextCard(
-                      title: 'Dialog',
-                      icon: Icons.swipe_right,
-                      onTap: () => Get.toNamed(Routes.DIALOG),
-                    ),
-                    CircularIconTextCard(
-                      title: 'Sheet',
-                      icon: Icons.fact_check_sharp,
-                      onTap: () => Get.toNamed(Routes.SHEET),
-                    ),
-                  ],
-                ),
-              ),
+              SizedBox(height: 48),
+              AtomSection(),
+              SizedBox(height: 48),
+              ElementSection(),
+              SizedBox(height: 48),
+              ActionSection(),
             ],
           ),
         ),

@@ -4,8 +4,8 @@ import '../../../../core/util/color_manager.dart';
 import '../../../../widgets/atoms/texts.dart';
 import '../widgets/color_card.dart';
 
-class Accent extends StatelessWidget {
-  const Accent({super.key});
+class AccentSection extends StatelessWidget {
+  const AccentSection({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -1,14 +1,11 @@
 import 'package:flutter/material.dart';
 
-import 'package:get/get.dart';
-
 import '../../../../core/util/color_manager.dart';
 import '../../../../widgets/actions/snackbar.dart';
 import '../../../../widgets/app_container.dart';
 import '../../../../widgets/elements/cards.dart';
-import '../controllers/app_snackbar_controller.dart';
 
-class SnackbarView extends GetView<AppSnackbarController> {
+class SnackbarView extends StatelessWidget {
   const SnackbarView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {

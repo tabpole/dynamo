@@ -55,7 +55,6 @@ class DialogView extends GetView<DialogController> {
                   title: 'Confirm Dialog',
                   onTap: () => ConfirmDialog.handle(
                     title: 'This is  confirmation dialog',
-                    // message: 'This is  confirmation dialog message',
                     onConfirm: () {},
                   ),
                 ),

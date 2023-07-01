@@ -4,8 +4,8 @@ import '../../../../core/util/color_manager.dart';
 import '../../../../widgets/atoms/texts.dart';
 import '../widgets/color_card.dart';
 
-class Primary extends StatelessWidget {
-  const Primary({super.key});
+class PrimarySection extends StatelessWidget {
+  const PrimarySection({super.key});
 
   @override
   Widget build(BuildContext context) {

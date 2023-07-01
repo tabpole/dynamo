@@ -1,15 +1,12 @@
 import 'package:flutter/material.dart';
 
-import 'package:get/get.dart';
-
 import '../../../../widgets/actions/sheet.dart';
 
 import '../../../../core/util/color_manager.dart';
 import '../../../../widgets/app_container.dart';
 import '../../../../widgets/elements/cards.dart';
-import '../controllers/sheet_controller.dart';
 
-class SheetView extends GetView<SheetController> {
+class SheetView extends StatelessWidget {
   const SheetView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {

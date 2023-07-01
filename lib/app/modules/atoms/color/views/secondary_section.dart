@@ -4,61 +4,54 @@ import '../../../../core/util/color_manager.dart';
 import '../../../../widgets/atoms/texts.dart';
 import '../widgets/color_card.dart';
 
-class Attention extends StatelessWidget {
-  const Attention({super.key});
+class SecondarySection extends StatelessWidget {
+  const SecondarySection({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const LargeTitleText('More'),
+        const LargeTitleText('30%'),
         const SizedBox(height: 16),
-        const TitleText('Attention Color'),
+        const TitleText('Secondary'),
         const SizedBox(height: 16),
         const Wrap(
           alignment: WrapAlignment.start,
           spacing: 16,
           children: [
             ColorCard(
-              color: ColorManager.SUCCESS,
-              name: 'Success',
+              color: ColorManager.SECONDARY,
+              name: 'Main',
             ),
             ColorCard(
-              color: ColorManager.INFO,
-              name: 'Info',
-            ),
-            ColorCard(
-              color: ColorManager.WARNING,
-              name: 'Warning',
-            ),
-            ColorCard(
-              color: ColorManager.DANGER,
-              name: 'Danger',
+              color: ColorManager.SECONDARY_ALT,
+              name: 'Alternative',
             ),
           ],
         ),
         const SizedBox(height: 16),
-        const TitleText('Attention Light Color'),
+        const TitleText('Brand Light'),
         const SizedBox(height: 16),
         Wrap(
           alignment: WrapAlignment.start,
           spacing: 16,
           children: [
+            // Example : Icon Color
             ColorCard(
-              color: ColorManager.SUCCESS_LIGHT,
-              name: 'Success',
+              color: ColorManager.BRAND_ALPHA_LIGHT,
+              name: 'Alpha',
             ),
             ColorCard(
-              color: ColorManager.INFO_LIGHT,
-              name: 'Info',
+              color: ColorManager.BRAND_BETA_LIGHT,
+              name: 'Beta',
             ),
             ColorCard(
-              color: ColorManager.WARNING_LIGHT,
-              name: 'Warning',
+              color: ColorManager.BRAND_GAMMA_LIGHT,
+              name: 'Gamma',
             ),
             ColorCard(
-              color: ColorManager.DANGER_LIGHT,
-              name: 'Danger',
+              color: ColorManager.BRAND_DELTA_LIGHT,
+              name: 'Delta',
             ),
           ],
         ),
