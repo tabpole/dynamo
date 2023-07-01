@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 
-import 'package:get/get.dart';
-import 'package:tablark/app/widgets/app_container.dart';
+import '../../../../widgets/app_container.dart';
 
-import '../controllers/color_controller.dart';
+import 'accent_section.dart';
+import 'attention_section.dart';
+import 'primary_section.dart';
+import 'secondary_section.dart';
 
-import 'accent.dart';
-import 'primary.dart';
-import 'secondary.dart';
-
-class ColorView extends GetView<ColorController> {
+class ColorView extends StatelessWidget {
   const ColorView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -23,11 +21,14 @@ class ColorView extends GetView<ColorController> {
             width: double.maxFinite,
             child: Column(
               children: [
-                Primary(),
+                PrimarySection(),
                 SizedBox(height: 64),
-                Secondary(),
+                SecondarySection(),
                 SizedBox(height: 64),
-                Accent(),
+                AccentSection(),
+                SizedBox(height: 64),
+                AttentionSection(),
+                SizedBox(height: 64),
               ],
             ),
           ),

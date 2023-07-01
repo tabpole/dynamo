@@ -1,4 +1,4 @@
-name: tablark
+name: dynamo
 version: 1.0.0+1
 publish_to: none
 description: A new Flutter project.
@@ -6,14 +6,20 @@ environment:
   sdk: '>=3.0.3 <4.0.0'
 
 dependencies: 
-  cupertino_icons: ^1.0.2
-  get: 4.6.5
   flutter: 
     sdk: flutter
+  # Dynamo dependencies
+  cupertino_icons: ^1.0.2
+  get: 4.6.5
   get_storage: ^2.1.1
   logger: ^1.4.0
   connectivity_plus: ^4.0.1
   internet_connection_checker: ^1.0.0+1
+  top_modal_sheet: ^2.0.1
+  geolocator: ^9.0.2
+  google_fonts: ^5.1.0
+  flutter_svg: ^2.0.7
+  # Example Dependencies
 
 dev_dependencies: 
   flutter_lints: ^2.0.0
@@ -23,22 +29,22 @@ dev_dependencies:
 flutter: 
   uses-material-design: true
   assets: 
-    - lib/assets/graphics/
-    - lib/assets/graphics/jpg/
-    - lib/assets/graphics/png/
-    - lib/assets/graphics/svg/
+    - lib/assets/
+    - lib/assets/jpg/
+    - lib/assets/png/
+    - lib/assets/svg/
 
-  fonts:
-  - family: Quicksand
-    fonts:
-      - asset: lib/assets/fonts/Quicksand-Light.ttf
-        weight: 300
-      - asset: lib/assets/fonts/Quicksand-Regular.ttf
-        weight: 400
-      - asset: lib/assets/fonts/Quicksand-Medium.ttf
-        weight: 500
-      - asset: lib/assets/fonts/Quicksand-SemiBold.ttf
-        weight: 600
-      - asset: lib/assets/fonts/Quicksand-Bold.ttf
-        weight: 700
+  # fonts:
+  # - family: Quicksand
+  #   fonts:
+  #     - asset: lib/fonts/Quicksand-Light.ttf
+  #       weight: 300
+  #     - asset: lib/fonts/Quicksand-Regular.ttf
+  #       weight: 400
+  #     - asset: lib/fonts/Quicksand-Medium.ttf
+  #       weight: 500
+  #     - asset: lib/fonts/Quicksand-SemiBold.ttf
+  #       weight: 600
+  #     - asset: lib/fonts/Quicksand-Bold.ttf
+  #       weight: 700
 

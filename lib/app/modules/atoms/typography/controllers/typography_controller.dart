@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../../core/util/text_color_manager.dart';
+import '../../../../core/util/text_color_manager.dart';
 
 class TypographyController extends GetxController {
   String text = "Lorem Ipsum is simply dummy text.";

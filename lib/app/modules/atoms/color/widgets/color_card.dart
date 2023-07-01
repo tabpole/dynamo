@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 
-import '../../../widgets/atoms/texts.dart';
+import '../../../../core/util/variable_manager.dart';
+import '../../../../widgets/atoms/texts.dart';
 
 class ColorCard extends StatelessWidget {
   final Color color;
-  final String code;
+  final String name;
   const ColorCard({
     super.key,
     required this.color,
-    required this.code,
+    required this.name,
   });
 
   @override
@@ -20,7 +21,7 @@ class ColorCard extends StatelessWidget {
           width: 400,
           decoration: BoxDecoration(
             color: color,
-            borderRadius: BorderRadius.circular(4),
+            borderRadius: BorderRadius.circular(VariableManager.edgeRadius),
             boxShadow: [
               BoxShadow(
                 color: Colors.grey.shade200,
@@ -32,7 +33,7 @@ class ColorCard extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 8),
-        RegularText(code),
+        RegularText(name),
         const SizedBox(height: 16),
       ],
     );

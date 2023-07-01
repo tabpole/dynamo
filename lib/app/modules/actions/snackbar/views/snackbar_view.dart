@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 
-import 'package:get/get.dart';
-
-import '../../../../actions/snackbar.dart';
+import '../../../../core/util/color_manager.dart';
+import '../../../../widgets/actions/snackbar.dart';
 import '../../../../widgets/app_container.dart';
 import '../../../../widgets/elements/cards.dart';
-import '../controllers/app_snackbar_controller.dart';
 
-class SnackbarView extends GetView<AppSnackbarController> {
+class SnackbarView extends StatelessWidget {
   const SnackbarView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -24,16 +22,44 @@ class SnackbarView extends GetView<AppSnackbarController> {
               runSpacing: 16,
               children: [
                 CircularIconTextCard(
-                  title: 'Success',
-                  onTap: () => SuccessSnackbar.handle(
+                  title: 'Accent',
+                  onTap: () => AccentSnackbar.handle(
                     title: 'Example Title',
                     message: "Example message",
                   ),
                 ),
                 CircularIconTextCard(
-                  title: 'Error',
-                  onTap: () => ErrorSnackbar.handle(
-                    title: 'Example Title',
+                  title: 'Success',
+                  iconColor: ColorManager.SUCCESS,
+                  onTap: () => SuccessSnackbar.handle(
+                    message: "Example message",
+                  ),
+                ),
+                CircularIconTextCard(
+                  title: 'Info',
+                  iconColor: ColorManager.INFO,
+                  onTap: () => InfoSnackbar.handle(
+                    message: "Example message",
+                  ),
+                ),
+                CircularIconTextCard(
+                  title: 'Warning',
+                  iconColor: ColorManager.WARNING,
+                  onTap: () => WarningSnackbar.handle(
+                    message: "Example message",
+                  ),
+                ),
+                CircularIconTextCard(
+                  title: 'Danger',
+                  iconColor: ColorManager.DANGER,
+                  onTap: () => DangerSnackbar.handle(
+                    message: "Example message",
+                  ),
+                ),
+                CircularIconTextCard(
+                  title: 'Disabaled',
+                  iconColor: ColorManager.DISABLED,
+                  onTap: () => DisabaledSnackbar.handle(
                     message: "Example message",
                   ),
                 ),

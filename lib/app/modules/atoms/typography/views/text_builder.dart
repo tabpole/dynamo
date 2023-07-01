@@ -1,24 +1,9 @@
-// ignore_for_file: constant_identifier_names
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:tablark/app/modules/typography/controllers/typography_controller.dart';
 
-import '../../../widgets/atoms/texts.dart';
-
-enum TextType {
-  TinyText,
-  SmallText,
-  SmallBoldText,
-  RegularText,
-  RegularBoldText,
-  LargeText,
-  LargeBoldText,
-  XLargeText,
-  XLargeBoldText,
-  XXLargeText,
-  XXLargeBoldText,
-}
+import '../../../../widgets/atoms/texts.dart';
+import '../controllers/typography_controller.dart';
+import '../enums/text_type_enum.dart';
 
 class TextBuilder extends GetView<TypographyController> {
   final TextType textType;
@@ -47,6 +32,9 @@ class TextBuilder extends GetView<TypographyController> {
       case TextType.TinyText:
         textOutput = TinyText(text, color: color);
         break;
+      case TextType.TinyBoldText:
+        textOutput = TinyBoldText(text, color: color);
+        break;
       case TextType.SmallText:
         textOutput = SmallText(text, color: color);
         break;
@@ -59,23 +47,23 @@ class TextBuilder extends GetView<TypographyController> {
       case TextType.RegularBoldText:
         textOutput = RegularBoldText(text, color: color);
         break;
-      case TextType.LargeText:
-        textOutput = LargeText(text, color: color);
+      case TextType.TitleText:
+        textOutput = TitleText(text, color: color);
         break;
-      case TextType.LargeBoldText:
-        textOutput = LargeBoldText(text, color: color);
+      case TextType.BoldTitleText:
+        textOutput = BoldTitleText(text, color: color);
         break;
-      case TextType.XLargeText:
-        textOutput = XLargeText(text, color: color);
+      case TextType.LargeTitleText:
+        textOutput = LargeTitleText(text, color: color);
         break;
-      case TextType.XLargeBoldText:
-        textOutput = XLargeBoldText(text, color: color);
+      case TextType.LargeBoldTitleText:
+        textOutput = LargeBoldTitleText(text, color: color);
         break;
-      case TextType.XXLargeText:
-        textOutput = XXLargeText(text, color: color);
+      case TextType.XLargeTitleText:
+        textOutput = XLargeTitleText(text, color: color);
         break;
-      case TextType.XXLargeBoldText:
-        textOutput = XXLargeBoldText(text, color: color);
+      case TextType.XLargeBoldTitleText:
+        textOutput = XLargeBoldTitleText(text, color: color);
         break;
     }
     return textOutput;

@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-
 import 'package:get/get.dart';
 
-import '../../../routes/app_pages.dart';
 import '../../../widgets/app_container.dart';
-import '../../../widgets/atoms/texts.dart';
-import '../../../widgets/elements/cards.dart';
 import '../controllers/home_controller.dart';
+import 'action_section.dart';
+import 'element_section.dart';
+import 'atom_section.dart';
 
 class HomeView extends GetView<HomeController> {
   const HomeView({Key? key}) : super(key: key);
@@ -14,65 +13,19 @@ class HomeView extends GetView<HomeController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Tablark'),
+        title: const Text('Dynamo'),
       ),
-      body: SingleChildScrollView(
+      body: const SingleChildScrollView(
         child: AppContainer(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              const SizedBox(height: 48),
-              const XLargeBoldText('Atoms'),
-              const SizedBox(height: 16),
-              Center(
-                child: Wrap(
-                  spacing: 16,
-                  runSpacing: 16,
-                  children: [
-                    CircularIconTextCard(
-                      title: 'Color',
-                      icon: Icons.color_lens_sharp,
-                      onTap: () => Get.toNamed(Routes.COLOR),
-                    ),
-                    CircularIconTextCard(
-                      title: 'Typography',
-                      icon: Icons.text_fields_rounded,
-                      onTap: () => Get.toNamed(Routes.TYPOGRAPHY),
-                    ),
-                  ],
-                ),
-              ),
-              const SizedBox(height: 48),
-              const XLargeBoldText('Elements'),
-              const SizedBox(height: 16),
-              Center(
-                child: Wrap(
-                  spacing: 16,
-                  runSpacing: 16,
-                  children: [
-                    for (int index = 0; index < 4; index++)
-                      const CircularIconTextCard(
-                        title: 'Example',
-                      ),
-                  ],
-                ),
-              ),
-              const SizedBox(height: 48),
-              const XLargeBoldText('Actions'),
-              const SizedBox(height: 16),
-              Center(
-                child: Wrap(
-                  spacing: 16,
-                  runSpacing: 16,
-                  children: [
-                    CircularIconTextCard(
-                      title: 'Snackbar',
-                      icon: Icons.notification_important_sharp,
-                      onTap: () => Get.toNamed(Routes.SNACKBAR),
-                    ),
-                  ],
-                ),
-              ),
+              SizedBox(height: 48),
+              AtomSection(),
+              SizedBox(height: 48),
+              ElementSection(),
+              SizedBox(height: 48),
+              ActionSection(),
             ],
           ),
         ),

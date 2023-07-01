@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 
-import '../../../core/util/color_manager.dart';
-import '../../../widgets/atoms/texts.dart';
+import '../../../../core/util/color_manager.dart';
+import '../../../../widgets/atoms/texts.dart';
 import '../widgets/color_card.dart';
 
-class Primary extends StatelessWidget {
-  const Primary({super.key});
+class PrimarySection extends StatelessWidget {
+  const PrimarySection({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const Column(
       children: [
-        XXLargeText('60%'),
+        LargeTitleText('60%'),
         SizedBox(height: 8),
-        LargeText('Primary '),
+        TitleText('Primary '),
         SizedBox(height: 16),
         Wrap(
           alignment: WrapAlignment.start,
@@ -21,11 +21,11 @@ class Primary extends StatelessWidget {
           children: [
             ColorCard(
               color: ColorManager.PRIMARY,
-              code: 'Main',
+              name: 'Main',
             ),
             ColorCard(
               color: ColorManager.PRIMARY_ALT,
-              code: 'Alternative',
+              name: 'Alternative',
             ),
           ],
         ),

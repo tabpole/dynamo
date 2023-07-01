@@ -20,6 +20,8 @@ abstract class Routes {
   // ****************** Actions *******************/
   //***********************************************/
   static const SNACKBAR = _Paths.SNACKBAR;
+  static const DIALOG = _Paths.DIALOG;
+  static const SHEET = _Paths.SHEET;
 
   //***********************************************/
   // ******************  Others  ******************/
@@ -43,6 +45,8 @@ abstract class _Paths {
   // ****************** Actions *******************/
   //***********************************************/
   static const SNACKBAR = '/snackbar';
+  static const DIALOG = '/dialog';
+  static const SHEET = '/sheet';
 
   //***********************************************/
   // ******************  Others  ******************/

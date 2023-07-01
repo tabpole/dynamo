@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 
-import '../../../core/util/color_manager.dart';
-import '../../../widgets/atoms/texts.dart';
+import '../../../../core/util/color_manager.dart';
+import '../../../../widgets/atoms/texts.dart';
 import '../widgets/color_card.dart';
 
-class Accent extends StatelessWidget {
-  const Accent({super.key});
+class AccentSection extends StatelessWidget {
+  const AccentSection({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const Column(
       children: [
-        XXLargeText('10%'),
+        LargeTitleText('10%'),
         SizedBox(height: 16),
-        LargeText('Accent '),
+        TitleText('Accent'),
         SizedBox(height: 16),
         Wrap(
           alignment: WrapAlignment.start,
@@ -21,16 +21,16 @@ class Accent extends StatelessWidget {
           children: [
             ColorCard(
               color: ColorManager.ACCENT,
-              code: 'Main',
+              name: 'Main',
             ),
             ColorCard(
               color: ColorManager.ACCENT_ALT,
-              code: 'Alternative',
+              name: 'Alternative',
             ),
           ],
         ),
         SizedBox(height: 16),
-        LargeText('Brand '),
+        TitleText('Brand'),
         SizedBox(height: 16),
         Wrap(
           alignment: WrapAlignment.start,
@@ -39,19 +39,19 @@ class Accent extends StatelessWidget {
             // Example : Icon Color
             ColorCard(
               color: ColorManager.BRAND_ALPHA,
-              code: 'Alpha',
+              name: 'Alpha',
             ),
             ColorCard(
               color: ColorManager.BRAND_BETA,
-              code: 'Beta',
+              name: 'Beta',
             ),
             ColorCard(
               color: ColorManager.BRAND_GAMMA,
-              code: 'Gamma',
+              name: 'Gamma',
             ),
             ColorCard(
               color: ColorManager.BRAND_DELTA,
-              code: 'Delta',
+              name: 'Delta',
             ),
           ],
         ),
