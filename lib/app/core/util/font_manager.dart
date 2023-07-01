@@ -28,5 +28,5 @@ class FontManager {
 
   // Font Letter Spacing
   static const double SPACE_PRIMARY = 1;
-  static const double SPACE_TITLE = -3;
+  static const double SPACE_TITLE = .5;
 }

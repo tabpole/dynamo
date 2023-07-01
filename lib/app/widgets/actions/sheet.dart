@@ -62,8 +62,8 @@ class ConfirmTopSheet {
   }) {
     return ShowTopSheet.handle(
       child: Container(
-        height: 300,
-        padding: const EdgeInsets.all(16.0),
+        height: 360,
+        padding: const EdgeInsets.fromLTRB(16, 32, 16, 16),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -90,8 +90,8 @@ class MessageTopSheet {
   }) {
     return ShowTopSheet.handle(
       child: Container(
-        height: 300,
-        padding: const EdgeInsets.all(16.0),
+        height: 320,
+        padding: const EdgeInsets.fromLTRB(16, 32, 16, 16),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
