@@ -65,7 +65,7 @@ class DialogView extends GetView<DialogController> {
                     child: Container(
                       height: 200,
                       width: 300,
-                      color: ColorManager.ACCENT_LIGHT,
+                      color: ColorManager.INVERSE_ACCENT,
                     ),
                   ),
                 ),

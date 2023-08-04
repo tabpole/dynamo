@@ -45,19 +45,19 @@ class AttentionSection extends StatelessWidget {
           spacing: 16,
           children: [
             ColorCard(
-              color: ColorManager.SUCCESS_LIGHT,
+              color: ColorManager.INVERSE_SUCCESS,
               name: 'Success',
             ),
             ColorCard(
-              color: ColorManager.INFO_LIGHT,
+              color: ColorManager.INVERSE_INFO,
               name: 'Info',
             ),
             ColorCard(
-              color: ColorManager.WARNING_LIGHT,
+              color: ColorManager.INVERSE_WARNING,
               name: 'Warning',
             ),
             ColorCard(
-              color: ColorManager.DANGER_LIGHT,
+              color: ColorManager.INVERSE_DANGER,
               name: 'Danger',
             ),
           ],

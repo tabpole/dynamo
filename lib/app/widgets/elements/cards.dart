@@ -36,7 +36,7 @@ class CircularIconTextCard extends StatelessWidget {
           borderRadius: BorderRadius.circular(VariableManager.edgeRadius),
           border: Border.all(
             width: 1,
-            color: ColorManager.SECONDARY_ALT,
+            color: ColorManager.INVERSE_ACCENT,
           ),
         ),
         child: Column(

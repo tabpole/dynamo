@@ -27,7 +27,7 @@ class SheetView extends StatelessWidget {
                   onTap: () => ShowTopSheet.handle(
                     child: Container(
                       height: 300,
-                      color: ColorManager.ACCENT_LIGHT,
+                      color: ColorManager.INVERSE_ACCENT,
                     ),
                   ),
                 ),
@@ -47,7 +47,7 @@ class SheetView extends StatelessWidget {
                   onTap: () => ShowBottomSheet.handle(
                     child: Container(
                       height: 300,
-                      color: ColorManager.ACCENT_LIGHT,
+                      color: ColorManager.INVERSE_ACCENT,
                     ),
                   ),
                 ),

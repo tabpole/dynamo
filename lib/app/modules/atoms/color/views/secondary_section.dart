@@ -24,7 +24,7 @@ class SecondarySection extends StatelessWidget {
               name: 'Main',
             ),
             ColorCard(
-              color: ColorManager.SECONDARY_ALT,
+              color: ColorManager.SECONDARY,
               name: 'Alternative',
             ),
           ],
@@ -38,19 +38,19 @@ class SecondarySection extends StatelessWidget {
           children: [
             // Example : Icon Color
             ColorCard(
-              color: ColorManager.BRAND_ALPHA_LIGHT,
+              color: ColorManager.INVERSE_ALPHA_VARIANT,
               name: 'Alpha',
             ),
             ColorCard(
-              color: ColorManager.BRAND_BETA_LIGHT,
+              color: ColorManager.INVERSE_BETA_VARIANT,
               name: 'Beta',
             ),
             ColorCard(
-              color: ColorManager.BRAND_GAMMA_LIGHT,
+              color: ColorManager.INVERSE_GAMMA_VARIANT,
               name: 'Gamma',
             ),
             ColorCard(
-              color: ColorManager.BRAND_DELTA_LIGHT,
+              color: ColorManager.INVERSE_DELTA_VARIANT,
               name: 'Delta',
             ),
           ],

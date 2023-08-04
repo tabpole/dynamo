@@ -8,39 +8,55 @@ class ColorManager {
   // Color Pallets Source
   // https://coolors.co/palette/f8f9fa-e9ecef-dee2e6-ced4da-adb5bd-6c757d-495057-343a40-212529
 
-  // use 60%
-  static const Color PRIMARY = Color(0xffFFFFFF);
-  static const Color PRIMARY_ALT = Color(0xffF8F9FA);
+  // Usecase : Text , icon
+  static Color PRIMARY = Colors.grey.shade800;
+  static Color LIGHT_PRIMARY = Colors.grey.shade500;
+  static Color DISABLED = Colors.grey.shade300;
 
-  // use 30%
-  static const Color SECONDARY = Color(0xffDEE2E6);
-  static const Color SECONDARY_ALT = Color(0xffCED4DA); // Use in Border
-
-  static Color BRAND_ALPHA_LIGHT = BRAND_ALPHA.withOpacity(0.1);
-  static Color BRAND_BETA_LIGHT = BRAND_BETA.withOpacity(0.1);
-  static Color BRAND_GAMMA_LIGHT = BRAND_GAMMA.withOpacity(0.1);
-  static Color BRAND_DELTA_LIGHT = BRAND_DELTA.withOpacity(0.1);
-
-  // use 10%
+  // Brand , tone color
   static const Color ACCENT = Color(0xff0050FF);
-  static Color ACCENT_LIGHT = ACCENT.withOpacity(0.1);
-  static const Color ACCENT_ALT = Color(0xff0033A2);
-  static Color ACCENT_ALT_LIGHT = ACCENT_ALT.withOpacity(0.1);
+  static const Color SECONDARY = Color(0xff6a00f4);
+  static const Color TERTIARY = Color(0xff780a1d);
 
-  static const Color BRAND_ALPHA = Color(0xffCF0D7E);
-  static const Color BRAND_BETA = Color(0xffff9a02);
-  static const Color BRAND_GAMMA = Color(0xff6a00f4);
-  static const Color BRAND_DELTA = Color(0xff780a1d);
+  static Color INVERSE_ACCENT = ACCENT.withOpacity(0.1);
+  static Color INVERSE_SECONDARY = SECONDARY.withOpacity(0.1);
+  static Color INVERSE_TERTIARY = TERTIARY.withOpacity(0.1);
 
-  // Attention Colors
+  static const Color ON_ACCENT = Colors.white;
+  static const Color ON_SECONDARY = Colors.white;
+  static const Color ON_TERTIARY = Colors.white;
+
+  // Variant Colors
+  static const Color ALPHA_VARIANT = Color(0xffCF0D7E);
+  static const Color BETA_VARIANT = Color(0xffff9a02);
+  static const Color GAMMA_VARIANT = Color(0xff6a00f4);
+  static const Color DELTA_VARIANT = Color(0xff780a1d);
+
+  static Color INVERSE_ALPHA_VARIANT = ALPHA_VARIANT.withOpacity(0.1);
+  static Color INVERSE_BETA_VARIANT = BETA_VARIANT.withOpacity(0.1);
+  static Color INVERSE_GAMMA_VARIANT = GAMMA_VARIANT.withOpacity(0.1);
+  static Color INVERSE_DELTA_VARIANT = DELTA_VARIANT.withOpacity(0.1);
+
+  static const Color ON_ALPHA_VARIANT = Colors.white;
+  static const Color ON_BETA_VARIANT = Colors.white;
+  static const Color ON_GAMMA_VARIANT = Colors.white;
+  static const Color ON_DELTA_VARIANT = Colors.white;
+
+  // Attention or Alert Colors
   static const Color SUCCESS = Color(0xff00B922);
   static const Color INFO = Color(0xff864ADB);
   static const Color WARNING = Color(0xffFFb71b);
   static const Color DANGER = Color(0xffFF4015);
-  static const Color DISABLED = Color(0xffADB5BD);
 
-  static Color SUCCESS_LIGHT = SUCCESS.withOpacity(0.1);
-  static Color INFO_LIGHT = INFO.withOpacity(0.1);
-  static Color WARNING_LIGHT = WARNING.withOpacity(0.1);
-  static Color DANGER_LIGHT = DANGER.withOpacity(0.1);
+  static Color INVERSE_SUCCESS = SUCCESS.withOpacity(0.1);
+  static Color INVERSE_INFO = INFO.withOpacity(0.1);
+  static Color INVERSE_WARNING = WARNING.withOpacity(0.1);
+  static Color INVERSE_DANGER = DANGER.withOpacity(0.1);
+
+  // Usecase : background color
+  static const Color SURFACE = Colors.white;
+  static const Color SURFACE_ALT = Color.fromARGB(255, 224, 224, 224);
+
+  // Usecase : border , divider , outline color
+  static const Color EDGE = Color.fromARGB(255, 238, 238, 238);
 }
