@@ -21,11 +21,11 @@ class ColorView extends StatelessWidget {
             width: double.maxFinite,
             child: Column(
               children: [
-                PrimarySection(),
+                AccentSection(),
+                SizedBox(height: 64),
                 SizedBox(height: 64),
                 SecondarySection(),
-                SizedBox(height: 64),
-                AccentSection(),
+                PrimarySection(),
                 SizedBox(height: 64),
                 AttentionSection(),
                 SizedBox(height: 64),

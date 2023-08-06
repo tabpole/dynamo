@@ -21,11 +21,11 @@ class PrimarySection extends StatelessWidget {
           children: [
             ColorCard(
               color: ColorManager.SURFACE,
-              name: 'Main',
+              name: 'Surface',
             ),
             ColorCard(
               color: ColorManager.SURFACE_ALT,
-              name: 'Alternative',
+              name: 'Surface Alternative',
             ),
           ],
         ),

@@ -9,9 +9,9 @@ class ColorManager {
   // https://coolors.co/palette/f8f9fa-e9ecef-dee2e6-ced4da-adb5bd-6c757d-495057-343a40-212529
 
   // Usecase : Text , icon
-  static Color PRIMARY = Colors.grey.shade800;
-  static Color LIGHT_PRIMARY = Colors.grey.shade500;
-  static Color DISABLED = Colors.grey.shade300;
+  static const Color PRIMARY = Color.fromARGB(255, 33, 33, 33);
+  static const Color LIGHT_PRIMARY = Color.fromARGB(255, 158, 158, 158);
+  static const Color DISABLED = Color.fromARGB(255, 224, 224, 224);
 
   // Brand , tone color
   static const Color ACCENT = Color(0xff0050FF);
@@ -19,10 +19,12 @@ class ColorManager {
   static const Color TERTIARY = Color(0xff780a1d);
 
   static Color INVERSE_ACCENT = ACCENT.withOpacity(0.1);
+  static Color INVERSE_PRIMARY = PRIMARY.withOpacity(0.1);
   static Color INVERSE_SECONDARY = SECONDARY.withOpacity(0.1);
   static Color INVERSE_TERTIARY = TERTIARY.withOpacity(0.1);
 
   static const Color ON_ACCENT = Colors.white;
+  static const Color ON_PRIMARY = Colors.white;
   static const Color ON_SECONDARY = Colors.white;
   static const Color ON_TERTIARY = Colors.white;
 
@@ -53,10 +55,15 @@ class ColorManager {
   static Color INVERSE_WARNING = WARNING.withOpacity(0.1);
   static Color INVERSE_DANGER = DANGER.withOpacity(0.1);
 
+  static const Color ON_SUCCESS = Colors.white;
+  static const Color ON_INFO = Colors.white;
+  static const Color ON_WARNING = Colors.white;
+  static const Color ON_DANGER = Colors.white;
+
   // Usecase : background color
   static const Color SURFACE = Colors.white;
-  static const Color SURFACE_ALT = Color.fromARGB(255, 224, 224, 224);
+  static const Color SURFACE_ALT = Color.fromARGB(255, 245, 245, 245);
 
   // Usecase : border , divider , outline color
-  static const Color EDGE = Color.fromARGB(255, 238, 238, 238);
+  static const Color line = Color.fromARGB(255, 238, 238, 238);
 }

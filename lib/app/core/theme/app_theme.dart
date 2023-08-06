@@ -16,7 +16,7 @@ class AppTheme {
     elevatedButtonTheme: ThemeElevatedButton.data,
     outlinedButtonTheme: ThemeOutlinedButton.data,
     canvasColor: Colors.white,
-    scaffoldBackgroundColor: ColorManager.PRIMARY,
+    scaffoldBackgroundColor: ColorManager.SURFACE,
     primarySwatch: ThemePrimarySwatch.data,
     visualDensity: VisualDensity.adaptivePlatformDensity,
   );

@@ -21,16 +21,24 @@ class AccentSection extends StatelessWidget {
           children: [
             ColorCard(
               color: ColorManager.ACCENT,
-              name: 'Main',
+              name: 'Accent',
             ),
             ColorCard(
-              color: ColorManager.ACCENT,
-              name: 'Alternative',
+              color: ColorManager.PRIMARY,
+              name: 'Primary',
+            ),
+            ColorCard(
+              color: ColorManager.SECONDARY,
+              name: 'Secondary',
+            ),
+            ColorCard(
+              color: ColorManager.TERTIARY,
+              name: 'Tertiary',
             ),
           ],
         ),
         SizedBox(height: 16),
-        TitleText('Brand'),
+        TitleText('Variant'),
         SizedBox(height: 16),
         Wrap(
           alignment: WrapAlignment.start,

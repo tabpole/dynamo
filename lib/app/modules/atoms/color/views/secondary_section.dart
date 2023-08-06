@@ -13,24 +13,33 @@ class SecondarySection extends StatelessWidget {
       children: [
         const LargeTitleText('30%'),
         const SizedBox(height: 16),
-        const TitleText('Secondary'),
+        const TitleText('Inverse Accent'),
         const SizedBox(height: 16),
-        const Wrap(
+        Wrap(
           alignment: WrapAlignment.start,
           spacing: 16,
           children: [
+            // Example : Icon Color
             ColorCard(
-              color: ColorManager.SECONDARY,
-              name: 'Main',
+              color: ColorManager.INVERSE_ACCENT,
+              name: 'Accent',
             ),
             ColorCard(
-              color: ColorManager.SECONDARY,
-              name: 'Alternative',
+              color: ColorManager.INVERSE_PRIMARY,
+              name: 'Primary',
+            ),
+            ColorCard(
+              color: ColorManager.INVERSE_SECONDARY,
+              name: 'Secondary',
+            ),
+            ColorCard(
+              color: ColorManager.INVERSE_TERTIARY,
+              name: 'Tertiary',
             ),
           ],
         ),
         const SizedBox(height: 16),
-        const TitleText('Brand Light'),
+        const TitleText('Inverse Variant'),
         const SizedBox(height: 16),
         Wrap(
           alignment: WrapAlignment.start,
