@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../widgets/atoms/texts.dart';
+import '../../../widgets/atoms/titles.dart';
 import '../../../widgets/elements/cards.dart';
 
 class ElementSection extends StatelessWidget {
@@ -10,7 +10,7 @@ class ElementSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const TitleText('Elements'),
+        const RegularHeading('Elements'),
         const SizedBox(height: 16),
         Center(
           child: Wrap(

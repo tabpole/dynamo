@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/util/color_manager.dart';
-import '../../../../widgets/atoms/texts.dart';
+import '../../../../widgets/atoms/titles.dart';
 import '../widgets/color_card.dart';
 
 class AttentionSection extends StatelessWidget {
@@ -11,9 +11,9 @@ class AttentionSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const LargeTitleText('More'),
+        const LargeHeading('More'),
         const SizedBox(height: 16),
-        const TitleText('Attention Color'),
+        const RegularHeading('Attention Color'),
         const SizedBox(height: 16),
         const Wrap(
           alignment: WrapAlignment.start,
@@ -38,7 +38,7 @@ class AttentionSection extends StatelessWidget {
           ],
         ),
         const SizedBox(height: 16),
-        const TitleText('Attention Light Color'),
+        const RegularHeading('Attention Light Color'),
         const SizedBox(height: 16),
         Wrap(
           alignment: WrapAlignment.start,

@@ -27,6 +27,16 @@ class TitleSection extends GetView<TypographyController> {
         LargeHeading(controller.text),
         XLargeHeading(controller.text),
         XXLargeHeading(controller.text),
+        const SizedBox(height: 32),
+
+        const RegularBoldText(
+          'Display Text',
+          color: ColorManager.ACCENT,
+        ),
+        const SizedBox(height: 8),
+        const Display('Display'),
+        const MassiveDisplay('Massive Display'),
+        const GiganticDisplay('Gigantic Display'),
       ],
     );
   }

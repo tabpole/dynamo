@@ -158,3 +158,81 @@ class XXLargeHeading extends StatelessWidget {
     );
   }
 }
+
+//*********************************************/
+// ************       Display     *************/
+//*********************************************/
+class Display extends StatelessWidget {
+  final String? text;
+  final Color color;
+  const Display(
+    this.text, {
+    super.key,
+    this.color = ColorManager.PRIMARY,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      text!,
+      style: FontManager.GFONT_TITLE.copyWith(
+        fontSize: FontManager.HUGE,
+        fontWeight: FontManager.BOLD,
+        letterSpacing: FontManager.SPACE_TITLE,
+        color: color,
+      ),
+    );
+  }
+}
+
+//*********************************************/
+// ************  Massive Display  *************/
+//*********************************************/
+class MassiveDisplay extends StatelessWidget {
+  final String? text;
+  final Color color;
+  const MassiveDisplay(
+    this.text, {
+    super.key,
+    this.color = ColorManager.PRIMARY,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      text!,
+      style: FontManager.GFONT_TITLE.copyWith(
+        fontSize: FontManager.MASSIVE,
+        fontWeight: FontManager.BOLD,
+        letterSpacing: FontManager.SPACE_TITLE,
+        color: color,
+      ),
+    );
+  }
+}
+
+//*********************************************/
+// ************ Gigantic Display  *************/
+//*********************************************/
+class GiganticDisplay extends StatelessWidget {
+  final String? text;
+  final Color color;
+  const GiganticDisplay(
+    this.text, {
+    super.key,
+    this.color = ColorManager.PRIMARY,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      text!,
+      style: FontManager.GFONT_TITLE.copyWith(
+        fontSize: FontManager.GIGANTIC,
+        fontWeight: FontManager.BOLD,
+        letterSpacing: FontManager.SPACE_TITLE,
+        color: color,
+      ),
+    );
+  }
+}

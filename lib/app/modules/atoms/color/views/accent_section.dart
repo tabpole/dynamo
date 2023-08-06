@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/util/color_manager.dart';
-import '../../../../widgets/atoms/texts.dart';
+import '../../../../widgets/atoms/titles.dart';
 import '../widgets/color_card.dart';
 
 class AccentSection extends StatelessWidget {
@@ -11,9 +11,9 @@ class AccentSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Column(
       children: [
-        LargeTitleText('10%'),
+        LargeHeading('10%'),
         SizedBox(height: 16),
-        TitleText('Accent'),
+        RegularHeading('Accent'),
         SizedBox(height: 16),
         Wrap(
           alignment: WrapAlignment.start,
@@ -38,7 +38,7 @@ class AccentSection extends StatelessWidget {
           ],
         ),
         SizedBox(height: 16),
-        TitleText('Variant'),
+        RegularHeading('Variant'),
         SizedBox(height: 16),
         Wrap(
           alignment: WrapAlignment.start,

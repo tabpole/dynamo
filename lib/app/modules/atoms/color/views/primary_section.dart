@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/util/color_manager.dart';
-import '../../../../widgets/atoms/texts.dart';
+import '../../../../widgets/atoms/titles.dart';
 import '../widgets/color_card.dart';
 
 class PrimarySection extends StatelessWidget {
@@ -11,9 +11,9 @@ class PrimarySection extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Column(
       children: [
-        LargeTitleText('60%'),
+        LargeHeading('60%'),
         SizedBox(height: 8),
-        TitleText('Primary '),
+        RegularHeading('Primary '),
         SizedBox(height: 16),
         Wrap(
           alignment: WrapAlignment.start,

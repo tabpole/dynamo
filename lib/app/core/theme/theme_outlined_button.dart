@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import '../util/color_manager.dart';
 import '../util/font_manager.dart';
-import '../util/text_color_manager.dart';
 import '../util/variable_manager.dart';
 
 class ThemeOutlinedButton {
@@ -19,7 +18,7 @@ class ThemeOutlinedButton {
         color: ColorManager.ACCENT,
         width: 3,
       ),
-      foregroundColor: TextColorManager.PRIMARY,
+      foregroundColor: ColorManager.SURFACE,
       minimumSize: const Size(120, 48),
       elevation: 2,
     ),

@@ -20,6 +20,11 @@ class FontManager {
   static const double XLARGE = 20;
   static const double XXLARGE = 22;
 
+  // Display Text
+  static const double HUGE = 36;
+  static const double MASSIVE = 48;
+  static const double GIGANTIC = 64;
+
   // Font weight
   static const FontWeight NORMAL = FontWeight.w400;
   static const FontWeight BOLD = FontWeight.w600;

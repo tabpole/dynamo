@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../routes/app_pages.dart';
-import '../../../widgets/atoms/texts.dart';
+import '../../../widgets/atoms/titles.dart';
 import '../../../widgets/elements/cards.dart';
 
 class ActionSection extends StatelessWidget {
@@ -12,7 +12,7 @@ class ActionSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const TitleText('Actions'),
+        const RegularHeading('Actions'),
         const SizedBox(height: 16),
         Center(
           child: Wrap(

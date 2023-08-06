@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/util/color_manager.dart';
-import '../../../../widgets/atoms/texts.dart';
+import '../../../../widgets/atoms/titles.dart';
 import '../widgets/color_card.dart';
 
 class SecondarySection extends StatelessWidget {
@@ -11,9 +11,9 @@ class SecondarySection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const LargeTitleText('30%'),
+        const LargeHeading('30%'),
         const SizedBox(height: 16),
-        const TitleText('Inverse Accent'),
+        const RegularHeading('Inverse Accent'),
         const SizedBox(height: 16),
         Wrap(
           alignment: WrapAlignment.start,
@@ -39,7 +39,7 @@ class SecondarySection extends StatelessWidget {
           ],
         ),
         const SizedBox(height: 16),
-        const TitleText('Inverse Variant'),
+        const RegularHeading('Inverse Variant'),
         const SizedBox(height: 16),
         Wrap(
           alignment: WrapAlignment.start,
