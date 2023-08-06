@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../core/util/color_manager.dart';
 import '../../core/util/font_manager.dart';
-import '../../core/util/text_color_manager.dart';
 
 // Naming convention : SIZE___(IF)BOLD___(IF)TITLE___TEXT
 
@@ -14,7 +14,30 @@ class TinyText extends StatelessWidget {
   const TinyText(
     this.text, {
     super.key,
-    this.color = TextColorManager.PRIMARY_REGULAR,
+    this.color = ColorManager.PRIMARY,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      text!,
+      style: FontManager.GFONT_PRIMARY.copyWith(
+        fontSize: FontManager.TINY,
+        fontWeight: FontManager.NORMAL,
+        letterSpacing: FontManager.SPACE_PRIMARY,
+        color: color,
+      ),
+    );
+  }
+}
+
+class TinyLightText extends StatelessWidget {
+  final String? text;
+  final Color color;
+  const TinyLightText(
+    this.text, {
+    super.key,
+    this.color = ColorManager.LIGHT_PRIMARY,
   });
 
   @override
@@ -37,7 +60,7 @@ class TinyBoldText extends StatelessWidget {
   const TinyBoldText(
     this.text, {
     super.key,
-    this.color = TextColorManager.PRIMARY,
+    this.color = ColorManager.PRIMARY,
   });
 
   @override
@@ -63,7 +86,30 @@ class SmallText extends StatelessWidget {
   const SmallText(
     this.text, {
     super.key,
-    this.color = TextColorManager.PRIMARY_REGULAR,
+    this.color = ColorManager.PRIMARY,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      text!,
+      style: FontManager.GFONT_PRIMARY.copyWith(
+        fontSize: FontManager.SMALL,
+        fontWeight: FontManager.NORMAL,
+        letterSpacing: FontManager.SPACE_PRIMARY,
+        color: color,
+      ),
+    );
+  }
+}
+
+class SmallLightText extends StatelessWidget {
+  final String? text;
+  final Color color;
+  const SmallLightText(
+    this.text, {
+    super.key,
+    this.color = ColorManager.LIGHT_PRIMARY,
   });
 
   @override
@@ -86,7 +132,7 @@ class SmallBoldText extends StatelessWidget {
   const SmallBoldText(
     this.text, {
     super.key,
-    this.color = TextColorManager.PRIMARY,
+    this.color = ColorManager.PRIMARY,
   });
 
   @override
@@ -112,7 +158,30 @@ class RegularText extends StatelessWidget {
   const RegularText(
     this.text, {
     super.key,
-    this.color = TextColorManager.PRIMARY_REGULAR,
+    this.color = ColorManager.PRIMARY,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      text!,
+      style: FontManager.GFONT_PRIMARY.copyWith(
+        fontSize: FontManager.REGULAR,
+        fontWeight: FontManager.NORMAL,
+        letterSpacing: FontManager.SPACE_PRIMARY,
+        color: color,
+      ),
+    );
+  }
+}
+
+class RegularLightText extends StatelessWidget {
+  final String? text;
+  final Color color;
+  const RegularLightText(
+    this.text, {
+    super.key,
+    this.color = ColorManager.LIGHT_PRIMARY,
   });
 
   @override
@@ -135,7 +204,7 @@ class RegularBoldText extends StatelessWidget {
   const RegularBoldText(
     this.text, {
     super.key,
-    this.color = TextColorManager.PRIMARY,
+    this.color = ColorManager.PRIMARY,
   });
 
   @override
@@ -153,6 +222,78 @@ class RegularBoldText extends StatelessWidget {
 }
 
 //*********************************************/
+// ******************   Large   ***************/
+//*********************************************/
+class LargeText extends StatelessWidget {
+  final String? text;
+  final Color color;
+  const LargeText(
+    this.text, {
+    super.key,
+    this.color = ColorManager.PRIMARY,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      text!,
+      style: FontManager.GFONT_PRIMARY.copyWith(
+        fontSize: FontManager.LARGE,
+        fontWeight: FontManager.NORMAL,
+        letterSpacing: FontManager.SPACE_TITLE,
+        color: color,
+      ),
+    );
+  }
+}
+
+class LargeLightText extends StatelessWidget {
+  final String? text;
+  final Color color;
+  const LargeLightText(
+    this.text, {
+    super.key,
+    this.color = ColorManager.LIGHT_PRIMARY,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      text!,
+      style: FontManager.GFONT_PRIMARY.copyWith(
+        fontSize: FontManager.LARGE,
+        fontWeight: FontManager.NORMAL,
+        letterSpacing: FontManager.SPACE_TITLE,
+        color: color,
+      ),
+    );
+  }
+}
+
+class LargeBoldText extends StatelessWidget {
+  final String? text;
+  final Color color;
+  const LargeBoldText(
+    this.text, {
+    super.key,
+    this.color = ColorManager.PRIMARY,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      text!,
+      style: FontManager.GFONT_PRIMARY.copyWith(
+        fontSize: FontManager.LARGE,
+        fontWeight: FontManager.BOLD,
+        letterSpacing: FontManager.SPACE_TITLE,
+        color: color,
+      ),
+    );
+  }
+}
+
+//*********************************************/
 // ******************   Title   ***************/
 //*********************************************/
 class TitleText extends StatelessWidget {
@@ -161,7 +302,7 @@ class TitleText extends StatelessWidget {
   const TitleText(
     this.text, {
     super.key,
-    this.color = TextColorManager.PRIMARY_REGULAR,
+    this.color = ColorManager.PRIMARY,
   });
 
   @override
@@ -184,7 +325,7 @@ class BoldTitleText extends StatelessWidget {
   const BoldTitleText(
     this.text, {
     super.key,
-    this.color = TextColorManager.PRIMARY,
+    this.color = ColorManager.PRIMARY,
   });
 
   @override
@@ -210,7 +351,7 @@ class LargeTitleText extends StatelessWidget {
   const LargeTitleText(
     this.text, {
     super.key,
-    this.color = TextColorManager.PRIMARY_REGULAR,
+    this.color = ColorManager.PRIMARY,
   });
 
   @override
@@ -233,7 +374,7 @@ class LargeBoldTitleText extends StatelessWidget {
   const LargeBoldTitleText(
     this.text, {
     super.key,
-    this.color = TextColorManager.PRIMARY,
+    this.color = ColorManager.PRIMARY,
   });
 
   @override
@@ -259,7 +400,7 @@ class XLargeTitleText extends StatelessWidget {
   const XLargeTitleText(
     this.text, {
     super.key,
-    this.color = TextColorManager.PRIMARY_REGULAR,
+    this.color = ColorManager.PRIMARY,
   });
 
   @override
@@ -282,7 +423,7 @@ class XLargeBoldTitleText extends StatelessWidget {
   const XLargeBoldTitleText(
     this.text, {
     super.key,
-    this.color = TextColorManager.PRIMARY,
+    this.color = ColorManager.PRIMARY,
   });
 
   @override

@@ -1,47 +1,32 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
+import '../../../../core/util/color_manager.dart';
 import '../../../../widgets/atoms/texts.dart';
-import '../enums/text_type_enum.dart';
-import 'text_builder.dart';
+import '../../../../widgets/atoms/titles.dart';
+import '../controllers/typography_controller.dart';
 
-class TitleSection extends StatelessWidget {
+class TitleSection extends GetView<TypographyController> {
   const TitleSection({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         // do not remove this comment line
-        TitleText('Title'),
-        SizedBox(height: 8),
-        TextBuilder(textType: TextType.TitleText),
-        SizedBox(height: 32),
+        const RegularBoldText(
+          'Heading Text',
+          color: ColorManager.ACCENT,
+        ),
+        const SizedBox(height: 8),
 
-        BoldTitleText('Bold Title'),
-        SizedBox(height: 8),
-        TextBuilder(textType: TextType.BoldTitleText),
-        SizedBox(height: 32),
-
-        LargeTitleText('Large Title'),
-        SizedBox(height: 8),
-        TextBuilder(textType: TextType.LargeTitleText),
-        SizedBox(height: 32),
-
-        LargeBoldTitleText('Large Bold Title '),
-        SizedBox(height: 8),
-        TextBuilder(textType: TextType.LargeBoldTitleText),
-        SizedBox(height: 32),
-
-        XLargeTitleText('XXLarge'),
-        SizedBox(height: 8),
-        TextBuilder(textType: TextType.XLargeTitleText),
-        SizedBox(height: 32),
-
-        XLargeBoldTitleText('XXLarge Bold'),
-        SizedBox(height: 8),
-        TextBuilder(textType: TextType.XLargeBoldTitleText),
-        SizedBox(height: 32),
+        TinyHeading(controller.text),
+        SmallHeading(controller.text),
+        RegularHeading(controller.text),
+        LargeHeading(controller.text),
+        XLargeHeading(controller.text),
+        XXLargeHeading(controller.text),
       ],
     );
   }

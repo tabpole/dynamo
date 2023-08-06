@@ -19,6 +19,7 @@ class TypographyView extends StatelessWidget {
             child: Column(
               children: [
                 TextSection(),
+                SizedBox(height: 32),
                 TitleSection(),
               ],
             ),

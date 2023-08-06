@@ -1,47 +1,52 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
+import '../../../../core/util/color_manager.dart';
 import '../../../../widgets/atoms/texts.dart';
-import '../enums/text_type_enum.dart';
-import 'text_builder.dart';
+import '../controllers/typography_controller.dart';
 
-class TextSection extends StatelessWidget {
+class TextSection extends GetView<TypographyController> {
   const TextSection({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         // do not remove this comment line
-        TinyText('Tiny'),
-        SizedBox(height: 8),
-        TextBuilder(textType: TextType.TinyText),
-        SizedBox(height: 32),
+        const RegularBoldText(
+          'Paragraph Text',
+          color: ColorManager.ACCENT,
+        ),
+        const SizedBox(height: 8),
 
-        TinyBoldText('Tiny Bold'),
-        SizedBox(height: 8),
-        TextBuilder(textType: TextType.TinyBoldText),
-        SizedBox(height: 32),
+        const TinyText('Tiny'),
+        const SizedBox(height: 8),
+        TinyText(controller.text),
+        TinyLightText(controller.text),
+        TinyBoldText(controller.text),
+        const SizedBox(height: 32),
 
-        SmallText('Small'),
-        SizedBox(height: 8),
-        TextBuilder(textType: TextType.SmallText),
-        SizedBox(height: 32),
+        const SmallText('Small'),
+        const SizedBox(height: 8),
+        SmallText(controller.text),
+        SmallLightText(controller.text),
+        SmallBoldText(controller.text),
+        const SizedBox(height: 32),
 
-        SmallBoldText('Small Bold'),
-        SizedBox(height: 8),
-        TextBuilder(textType: TextType.SmallBoldText),
-        SizedBox(height: 32),
+        const RegularText('Regular'),
+        const SizedBox(height: 8),
+        RegularText(controller.text),
+        RegularLightText(controller.text),
+        RegularBoldText(controller.text),
+        const SizedBox(height: 32),
 
-        RegularText('Regular'),
-        SizedBox(height: 8),
-        TextBuilder(textType: TextType.RegularText),
-        SizedBox(height: 32),
-
-        RegularBoldText('Regular Bold'),
-        SizedBox(height: 8),
-        TextBuilder(textType: TextType.RegularBoldText),
-        SizedBox(height: 32),
+        const LargeText('Large'),
+        const SizedBox(height: 8),
+        LargeText(controller.text),
+        LargeLightText(controller.text),
+        LargeBoldText(controller.text),
+        const SizedBox(height: 32),
       ],
     );
   }

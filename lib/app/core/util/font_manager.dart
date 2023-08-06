@@ -13,14 +13,12 @@ class FontManager {
   static var GFONT_TITLE = GoogleFonts.lexendPeta();
 
   // Font Sizes
-  // Primary
-  static const double TINY = 13;
-  static const double SMALL = 15;
-  static const double REGULAR = 18;
-  // Title
-  static const double LARGE = 21;
-  static const double XLARGE = 24;
-  static const double XXLARGE = 32;
+  static const double TINY = 12;
+  static const double SMALL = 14;
+  static const double REGULAR = 16;
+  static const double LARGE = 18;
+  static const double XLARGE = 20;
+  static const double XXLARGE = 22;
 
   // Font weight
   static const FontWeight NORMAL = FontWeight.w400;
