@@ -67,7 +67,7 @@ class ConfirmTopSheet {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            RegularBoldText(title),
+            MediumLabel(title),
             const SizedBox(height: 16),
             const CircularLargeIcon(Icons.question_mark_sharp),
             const SizedBox(height: 16),
@@ -95,9 +95,9 @@ class MessageTopSheet {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            RegularBoldText(title),
+            MediumLabel(title),
             const SizedBox(height: 16),
-            SmallText(message),
+            SmallParagraph(message),
             const SizedBox(height: 32),
             SheetAction(onConfirm: onConfirm),
           ],
@@ -143,7 +143,7 @@ class ConfirmBottomSheet {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            RegularBoldText(title),
+            MediumLabel(title),
             const SizedBox(height: 16),
             const CircularLargeIcon(Icons.question_mark_sharp),
             const SizedBox(height: 16),
@@ -171,9 +171,9 @@ class MessageBottomSheet {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            RegularBoldText(title),
+            MediumLabel(title),
             const SizedBox(height: 16),
-            SmallText(message),
+            SmallParagraph(message),
             const SizedBox(height: 32),
             SheetAction(onConfirm: onConfirm),
           ],

@@ -9,7 +9,7 @@ class CircularIcon extends StatelessWidget {
   const CircularIcon(
     this.icon, {
     super.key,
-    this.color = ColorManager.ACCENT,
+    this.color = ColorManager.PRIMARY,
     this.margin = const EdgeInsets.all(0),
   });
 
@@ -38,7 +38,7 @@ class CircularLargeIcon extends StatelessWidget {
   const CircularLargeIcon(
     this.icon, {
     super.key,
-    this.color = ColorManager.ACCENT,
+    this.color = ColorManager.PRIMARY,
     this.margin = const EdgeInsets.all(16),
   });
 

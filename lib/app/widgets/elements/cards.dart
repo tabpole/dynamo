@@ -20,7 +20,7 @@ class CircularIconTextCard extends StatelessWidget {
     this.color = Colors.white,
     this.title = '',
     this.icon = Icons.check_circle_outlined,
-    this.iconColor = ColorManager.ACCENT,
+    this.iconColor = ColorManager.PRIMARY,
     this.onTap,
   });
 
@@ -36,7 +36,7 @@ class CircularIconTextCard extends StatelessWidget {
           borderRadius: BorderRadius.circular(VariableManager.edgeRadius),
           border: Border.all(
             width: 1,
-            color: ColorManager.INVERSE_ACCENT,
+            color: ColorManager.PRIMARY,
           ),
         ),
         child: Column(
@@ -47,7 +47,7 @@ class CircularIconTextCard extends StatelessWidget {
               color: iconColor,
             ),
             const SizedBox(height: 8),
-            RegularParagraph(title),
+            MediumParagraph(title),
           ],
         ),
       ),

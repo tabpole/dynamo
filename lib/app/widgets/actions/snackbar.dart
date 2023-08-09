@@ -8,17 +8,17 @@ import '../atoms/texts.dart';
 //*********************************************/
 // ************* Accent Snackbar *************/
 //*********************************************/
-class AccentSnackbar {
+class PrimarySnackbar {
   static SnackbarController handle({
     String title = "Notification",
     String message = "",
-    Color color = ColorManager.ACCENT,
+    Color color = ColorManager.PRIMARY,
   }) {
     return Get.snackbar(
       title,
       message,
-      titleText: RegularBoldText(title),
-      messageText: SmallText(message),
+      titleText: MediumLabel(title),
+      messageText: SmallParagraph(message),
       margin: const EdgeInsets.all(8),
       padding: const EdgeInsets.fromLTRB(20, 16, 16, 16),
       duration: const Duration(seconds: 4),
@@ -45,7 +45,7 @@ class SuccessSnackbar {
     String title = "Success",
     String message = "",
   }) {
-    return AccentSnackbar.handle(
+    return PrimarySnackbar.handle(
       title: title,
       message: message,
       color: ColorManager.SUCCESS,
@@ -61,7 +61,7 @@ class InfoSnackbar {
     String title = "Information",
     String message = "",
   }) {
-    return AccentSnackbar.handle(
+    return PrimarySnackbar.handle(
       title: title,
       message: message,
       color: ColorManager.INFO,
@@ -77,7 +77,7 @@ class WarningSnackbar {
     String title = "Warning",
     String message = "",
   }) {
-    return AccentSnackbar.handle(
+    return PrimarySnackbar.handle(
       title: title,
       message: message,
       color: ColorManager.WARNING,
@@ -93,7 +93,7 @@ class DangerSnackbar {
     String title = "Danger",
     String message = "",
   }) {
-    return AccentSnackbar.handle(
+    return PrimarySnackbar.handle(
       title: title,
       message: message,
       color: ColorManager.DANGER,
@@ -109,7 +109,7 @@ class DisabaledSnackbar {
     String title = "Disabaled",
     String message = "",
   }) {
-    return AccentSnackbar.handle(
+    return PrimarySnackbar.handle(
       title: title,
       message: message,
       color: ColorManager.DISABLED,

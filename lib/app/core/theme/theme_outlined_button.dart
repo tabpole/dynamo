@@ -12,10 +12,10 @@ class ThemeOutlinedButton {
         borderRadius: BorderRadius.circular(VariableManager.buttonEdgeRadius),
       ),
       textStyle: const TextStyle(
-        fontSize: FontManager.REGULAR,
+        fontSize: 16,
       ),
       side: const BorderSide(
-        color: ColorManager.ACCENT,
+        color: ColorManager.PRIMARY,
         width: 3,
       ),
       foregroundColor: ColorManager.SURFACE,

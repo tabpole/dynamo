@@ -26,9 +26,9 @@ class ShowDialog {
         padding: const EdgeInsets.fromLTRB(16, 16, 16, 16),
         child: Column(
           children: [
-            RegularBoldText(title),
+            MediumLabel(title),
             const SizedBox(height: 8),
-            message != null ? SmallText(message) : Container(),
+            message != null ? SmallParagraph(message) : Container(),
             const SizedBox(height: 8),
             child ?? Container(),
             const SizedBox(height: 16),
