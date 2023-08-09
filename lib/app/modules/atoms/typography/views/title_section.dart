@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../../core/util/color_manager.dart';
-import '../../../../widgets/atoms/texts.dart';
 import '../../../../widgets/atoms/titles.dart';
 import '../controllers/typography_controller.dart';
 
@@ -15,28 +14,29 @@ class TitleSection extends GetView<TypographyController> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         // do not remove this comment line
-        const RegularBoldText(
-          'Heading Text',
-          color: ColorManager.ACCENT,
+        const TinyHeading(
+          'Heading Title',
+          color: ColorManager.PRIMARY,
         ),
         const SizedBox(height: 8),
 
         TinyHeading(controller.text),
         SmallHeading(controller.text),
-        RegularHeading(controller.text),
+        MediumHeading(controller.text),
         LargeHeading(controller.text),
         XLargeHeading(controller.text),
         XXLargeHeading(controller.text),
         const SizedBox(height: 32),
 
-        const RegularBoldText(
-          'Display Text',
-          color: ColorManager.ACCENT,
+        const TinyHeading(
+          'Display Title',
+          color: ColorManager.PRIMARY,
         ),
         const SizedBox(height: 8),
-        const Display('Display'),
-        const MassiveDisplay('Massive Display'),
-        const GiganticDisplay('Gigantic Display'),
+        const TinyDisplay('Tiny Display'),
+        const SmallDisplay('Small Display'),
+        const MediumDisplay('Medium Display'),
+        const LargeDisplay('Large Display'),
       ],
     );
   }

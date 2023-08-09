@@ -13,14 +13,14 @@ class AccentSection extends StatelessWidget {
       children: [
         LargeHeading('10%'),
         SizedBox(height: 16),
-        RegularHeading('Accent'),
+        TinyHeading('Accent'),
         SizedBox(height: 16),
         Wrap(
           alignment: WrapAlignment.start,
           spacing: 16,
           children: [
             ColorCard(
-              color: ColorManager.ACCENT,
+              color: ColorManager.PRIMARY,
               name: 'Accent',
             ),
             ColorCard(
@@ -38,7 +38,7 @@ class AccentSection extends StatelessWidget {
           ],
         ),
         SizedBox(height: 16),
-        RegularHeading('Variant'),
+        TinyHeading('Variant'),
         SizedBox(height: 16),
         Wrap(
           alignment: WrapAlignment.start,

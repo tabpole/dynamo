@@ -9,18 +9,19 @@ class FontManager {
   static const String TITLE_FONT = "Quicksand";
 
   // Select Goolge Fonts
-  static TextTheme GFONT_PRIMARY_THEME = GoogleFonts.quicksandTextTheme();
-  static var TEXT_GFONT = GoogleFonts.quicksand();
+  static TextTheme GFONT_PRIMARY_THEME = GoogleFonts.signikaNegativeTextTheme();
+  static var TEXT_GFONT = GoogleFonts.signikaNegative();
   static var TITLE_GFONT = GoogleFonts.paytoneOne();
+  // static var TITLE_GFONT = GoogleFonts.lexend();
 
   // Font Color
   static const Color COLOR = Colors.black;
-  static const Color LITE_COLOR = Color.fromARGB(255, 158, 158, 158);
+  static const Color LITE_COLOR = Color.fromARGB(255, 97, 97, 97);
 
   // Font weight
   static const FontWeight PARAGRAPH_FONT_WEIGHT = FontWeight.w400;
   static const FontWeight LITE_PARAGRAPH_FONT_WEIGHT = FontWeight.w400;
-  static const FontWeight LABEL_FONT_WEIGHT = FontWeight.w500;
+  static const FontWeight LABEL_FONT_WEIGHT = FontWeight.w600;
 
   static const FontWeight HEADING_FONT_WEIGHT = FontWeight.w700;
   static const FontWeight DISPLAY_FONT_WEIGHT = FontWeight.w700;

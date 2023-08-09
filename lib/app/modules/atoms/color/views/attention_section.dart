@@ -13,7 +13,7 @@ class AttentionSection extends StatelessWidget {
       children: [
         const LargeHeading('More'),
         const SizedBox(height: 16),
-        const RegularHeading('Attention Color'),
+        const TinyHeading('Attention Color'),
         const SizedBox(height: 16),
         const Wrap(
           alignment: WrapAlignment.start,
@@ -38,7 +38,7 @@ class AttentionSection extends StatelessWidget {
           ],
         ),
         const SizedBox(height: 16),
-        const RegularHeading('Attention Light Color'),
+        const TinyHeading('Attention Light Color'),
         const SizedBox(height: 16),
         Wrap(
           alignment: WrapAlignment.start,

@@ -12,7 +12,7 @@ class ActionSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const RegularHeading('Actions'),
+        const TinyHeading('Actions'),
         const SizedBox(height: 16),
         Center(
           child: Wrap(

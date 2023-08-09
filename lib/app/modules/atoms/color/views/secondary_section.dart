@@ -13,7 +13,7 @@ class SecondarySection extends StatelessWidget {
       children: [
         const LargeHeading('30%'),
         const SizedBox(height: 16),
-        const RegularHeading('Inverse Accent'),
+        const TinyHeading('Inverse Accent'),
         const SizedBox(height: 16),
         Wrap(
           alignment: WrapAlignment.start,
@@ -21,7 +21,7 @@ class SecondarySection extends StatelessWidget {
           children: [
             // Example : Icon Color
             ColorCard(
-              color: ColorManager.INVERSE_ACCENT,
+              color: ColorManager.INVERSE_PRIMARY,
               name: 'Accent',
             ),
             ColorCard(
@@ -39,7 +39,7 @@ class SecondarySection extends StatelessWidget {
           ],
         ),
         const SizedBox(height: 16),
-        const RegularHeading('Inverse Variant'),
+        const TinyHeading('Inverse Variant'),
         const SizedBox(height: 16),
         Wrap(
           alignment: WrapAlignment.start,

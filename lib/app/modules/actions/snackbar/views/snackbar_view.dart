@@ -23,7 +23,7 @@ class SnackbarView extends StatelessWidget {
               children: [
                 CircularIconTextCard(
                   title: 'Accent',
-                  onTap: () => AccentSnackbar.handle(
+                  onTap: () => PrimarySnackbar.handle(
                     title: 'Example Title',
                     message: "Example message",
                   ),

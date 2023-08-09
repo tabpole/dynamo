@@ -30,7 +30,7 @@ class ParagraphText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text!,
-      style: FontManager.TITLE_GFONT.copyWith(
+      style: FontManager.TEXT_GFONT.copyWith(
         fontSize: fontSize,
         height: height,
         fontWeight: FontManager.PARAGRAPH_FONT_WEIGHT,
@@ -245,7 +245,7 @@ class LabelText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text!,
-      style: FontManager.TITLE_GFONT.copyWith(
+      style: FontManager.TEXT_GFONT.copyWith(
         fontSize: fontSize,
         height: height,
         fontWeight: FontManager.LABEL_FONT_WEIGHT,

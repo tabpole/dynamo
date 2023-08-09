@@ -12,7 +12,7 @@ class AtomSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const RegularHeading('Atoms'),
+        const TinyHeading('Atoms'),
         const SizedBox(height: 16),
         Center(
           child: Wrap(

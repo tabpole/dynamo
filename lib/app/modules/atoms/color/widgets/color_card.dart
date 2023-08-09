@@ -33,7 +33,7 @@ class ColorCard extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 8),
-        RegularText(name),
+        MediumParagraph(name),
         const SizedBox(height: 16),
       ],
     );

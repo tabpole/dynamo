@@ -10,7 +10,7 @@ class ElementSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const RegularHeading('Elements'),
+        const TinyHeading('Elements'),
         const SizedBox(height: 16),
         Center(
           child: Wrap(

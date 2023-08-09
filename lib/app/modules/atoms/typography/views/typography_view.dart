@@ -17,6 +17,7 @@ class TypographyView extends StatelessWidget {
           child: SizedBox(
             width: double.maxFinite,
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 TextSection(),
                 SizedBox(height: 32),

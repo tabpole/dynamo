@@ -13,7 +13,7 @@ class PrimarySection extends StatelessWidget {
       children: [
         LargeHeading('60%'),
         SizedBox(height: 8),
-        RegularHeading('Primary '),
+        TinyHeading('Primary '),
         SizedBox(height: 16),
         Wrap(
           alignment: WrapAlignment.start,

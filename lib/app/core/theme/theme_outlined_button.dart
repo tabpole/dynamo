@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../util/color_manager.dart';
-import '../util/font_manager.dart';
 import '../util/variable_manager.dart';
 
 class ThemeOutlinedButton {
