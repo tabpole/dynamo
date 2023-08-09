@@ -10,7 +10,7 @@ class ColorManager {
 
   // Usecase : Text , icon
   static const Color PRIMARY = Color.fromARGB(255, 33, 33, 33);
-  static const Color LIGHT_PRIMARY = Color.fromARGB(255, 158, 158, 158);
+  static const Color LIGHT_PRIMARY = Color.fromARGB(255, 117, 117, 117);
   static const Color DISABLED = Color.fromARGB(255, 224, 224, 224);
 
   // Brand , tone color

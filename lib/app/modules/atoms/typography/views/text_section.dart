@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -46,6 +48,15 @@ class TextSection extends GetView<TypographyController> {
         LargeText(controller.text),
         LargeLightText(controller.text),
         LargeBoldText(controller.text),
+        const SizedBox(height: 32),
+
+        const LargeText('Large Paragraph'),
+        const SizedBox(height: 8),
+        Container(
+          color: Colors.transparent,
+          child: LargeParagraph(controller.text),
+        ),
+        LargeLightText(controller.text),
         const SizedBox(height: 32),
       ],
     );

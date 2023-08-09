@@ -1,294 +1,405 @@
 import 'package:flutter/material.dart';
 
-import '../../core/util/color_manager.dart';
 import '../../core/util/font_manager.dart';
 
-// Naming convention : SIZE___(IF)BOLD___(IF)TITLE___TEXT
+// Naming convention : (COLOR)_(SIZE)_(TEXT_TYPE)
 
-//*********************************************/
-// ****************** TINY ********************/
-//*********************************************/
-class TinyText extends StatelessWidget {
+//***************************************************************/
+//***************************************************************/
+// ***********************   Paragraph   ************************/
+//***************************************************************/
+//***************************************************************/
+
+//***************************************************************/
+// ************************   Large   ***************************/
+//***************************************************************/
+class LargeParagraph extends StatelessWidget {
   final String? text;
   final Color color;
-  const TinyText(
+  const LargeParagraph(
     this.text, {
     super.key,
-    this.color = ColorManager.PRIMARY,
+    this.color = FontManager.COLOR,
   });
 
   @override
   Widget build(BuildContext context) {
     return Text(
       text!,
-      style: FontManager.GFONT_PRIMARY.copyWith(
-        fontSize: FontManager.TINY,
-        fontWeight: FontManager.NORMAL,
-        letterSpacing: FontManager.SPACE_PRIMARY,
+      style: FontManager.TEXT_GFONT.copyWith(
+        fontSize: 18,
+        height: 1.555,
+        fontWeight: FontManager.PARAGRAPH_FONT_WEIGHT,
+        letterSpacing: FontManager.TEXT_LETTER_SPACE,
         color: color,
       ),
     );
   }
 }
 
-class TinyLightText extends StatelessWidget {
+//***************************************************************/
+// ************************   Medium    *************************/
+//***************************************************************/
+class MediumParagraph extends StatelessWidget {
   final String? text;
   final Color color;
-  const TinyLightText(
+  const MediumParagraph(
     this.text, {
     super.key,
-    this.color = ColorManager.LIGHT_PRIMARY,
+    this.color = FontManager.COLOR,
   });
 
   @override
   Widget build(BuildContext context) {
     return Text(
       text!,
-      style: FontManager.GFONT_PRIMARY.copyWith(
-        fontSize: FontManager.TINY,
-        fontWeight: FontManager.NORMAL,
-        letterSpacing: FontManager.SPACE_PRIMARY,
+      style: FontManager.TEXT_GFONT.copyWith(
+        fontSize: 16,
+        height: 1.5,
+        fontWeight: FontManager.PARAGRAPH_FONT_WEIGHT,
+        letterSpacing: FontManager.TEXT_LETTER_SPACE,
         color: color,
       ),
     );
   }
 }
 
-class TinyBoldText extends StatelessWidget {
+//***************************************************************/
+// ************************    Small    *************************/
+//***************************************************************/
+class SmallParagraph extends StatelessWidget {
   final String? text;
   final Color color;
-  const TinyBoldText(
+  const SmallParagraph(
     this.text, {
     super.key,
-    this.color = ColorManager.PRIMARY,
+    this.color = FontManager.COLOR,
   });
 
   @override
   Widget build(BuildContext context) {
     return Text(
       text!,
-      style: FontManager.GFONT_PRIMARY.copyWith(
-        fontSize: FontManager.TINY,
-        fontWeight: FontManager.BOLD,
-        letterSpacing: FontManager.SPACE_PRIMARY,
+      style: FontManager.TEXT_GFONT.copyWith(
+        fontSize: 14,
+        height: 1.429,
+        fontWeight: FontManager.PARAGRAPH_FONT_WEIGHT,
+        letterSpacing: FontManager.TEXT_LETTER_SPACE,
         color: color,
       ),
     );
   }
 }
 
-//*********************************************/
-// ****************** SMALL *******************/
-//*********************************************/
-class SmallText extends StatelessWidget {
+//***************************************************************/
+// ************************    Tiny     *************************/
+//***************************************************************/
+class TinyParagraph extends StatelessWidget {
   final String? text;
   final Color color;
-  const SmallText(
+  const TinyParagraph(
     this.text, {
     super.key,
-    this.color = ColorManager.PRIMARY,
+    this.color = FontManager.COLOR,
   });
 
   @override
   Widget build(BuildContext context) {
     return Text(
       text!,
-      style: FontManager.GFONT_PRIMARY.copyWith(
-        fontSize: FontManager.SMALL,
-        fontWeight: FontManager.NORMAL,
-        letterSpacing: FontManager.SPACE_PRIMARY,
+      style: FontManager.TEXT_GFONT.copyWith(
+        fontSize: 12,
+        height: 1.667,
+        fontWeight: FontManager.PARAGRAPH_FONT_WEIGHT,
+        letterSpacing: FontManager.TEXT_LETTER_SPACE,
         color: color,
       ),
     );
   }
 }
 
-class SmallLightText extends StatelessWidget {
+//***************************************************************/
+//***************************************************************/
+// ********************   Lite Paragraph   **********************/
+//***************************************************************/
+//***************************************************************/
+
+//***************************************************************/
+// ************************   Large   ***************************/
+//***************************************************************/
+class LiteLargeParagraph extends StatelessWidget {
   final String? text;
-  final Color color;
-  const SmallLightText(
+
+  const LiteLargeParagraph(
     this.text, {
     super.key,
-    this.color = ColorManager.LIGHT_PRIMARY,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return LargeParagraph(
+      text,
+      color: FontManager.LITE_COLOR,
+    );
+  }
+}
+
+//***************************************************************/
+// ************************   Medium   ***************************/
+//***************************************************************/
+class LiteMediumParagraph extends StatelessWidget {
+  final String? text;
+
+  const LiteMediumParagraph(
+    this.text, {
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return MediumParagraph(
+      text,
+      color: FontManager.LITE_COLOR,
+    );
+  }
+}
+
+//***************************************************************/
+// ************************   Small   ***************************/
+//***************************************************************/
+class LiteSmallParagraph extends StatelessWidget {
+  final String? text;
+
+  const LiteSmallParagraph(
+    this.text, {
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return SmallParagraph(
+      text,
+      color: FontManager.LITE_COLOR,
+    );
+  }
+}
+
+//***************************************************************/
+// ************************   Tiny    ***************************/
+//***************************************************************/
+class LiteTinyParagraph extends StatelessWidget {
+  final String? text;
+
+  const LiteTinyParagraph(
+    this.text, {
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return TinyParagraph(
+      text,
+      color: FontManager.LITE_COLOR,
+    );
+  }
+}
+
+//***************************************************************/
+//***************************************************************/
+// ***********************     Label     ************************/
+//***************************************************************/
+//***************************************************************/
+
+//***************************************************************/
+// ************************   Large   ***************************/
+//***************************************************************/
+class LargeLabel extends StatelessWidget {
+  final String? text;
+  final Color color;
+  const LargeLabel(
+    this.text, {
+    super.key,
+    this.color = FontManager.COLOR,
   });
 
   @override
   Widget build(BuildContext context) {
     return Text(
       text!,
-      style: FontManager.GFONT_PRIMARY.copyWith(
-        fontSize: FontManager.SMALL,
-        fontWeight: FontManager.NORMAL,
-        letterSpacing: FontManager.SPACE_PRIMARY,
+      style: FontManager.TEXT_GFONT.copyWith(
+        fontSize: 18,
+        height: 1.334,
+        fontWeight: FontManager.LABEL_FONT_WEIGHT,
+        letterSpacing: FontManager.TEXT_LETTER_SPACE,
         color: color,
       ),
     );
   }
 }
 
-class SmallBoldText extends StatelessWidget {
+//***************************************************************/
+// ************************   Medium    *************************/
+//***************************************************************/
+class MediumLabel extends StatelessWidget {
   final String? text;
   final Color color;
-  const SmallBoldText(
+  const MediumLabel(
     this.text, {
     super.key,
-    this.color = ColorManager.PRIMARY,
+    this.color = FontManager.COLOR,
   });
 
   @override
   Widget build(BuildContext context) {
     return Text(
       text!,
-      style: FontManager.GFONT_PRIMARY.copyWith(
-        fontSize: FontManager.SMALL,
-        fontWeight: FontManager.BOLD,
-        letterSpacing: FontManager.SPACE_PRIMARY,
+      style: FontManager.TEXT_GFONT.copyWith(
+        fontSize: 16,
+        height: 1.25,
+        fontWeight: FontManager.LABEL_FONT_WEIGHT,
+        letterSpacing: FontManager.TEXT_LETTER_SPACE,
         color: color,
       ),
     );
   }
 }
 
-//*********************************************/
-// ****************** Regular   ***************/
-//*********************************************/
-class RegularText extends StatelessWidget {
+//***************************************************************/
+// ************************    Small    *************************/
+//***************************************************************/
+class SmallLabel extends StatelessWidget {
   final String? text;
   final Color color;
-  const RegularText(
+  const SmallLabel(
     this.text, {
     super.key,
-    this.color = ColorManager.PRIMARY,
+    this.color = FontManager.COLOR,
   });
 
   @override
   Widget build(BuildContext context) {
     return Text(
       text!,
-      style: FontManager.GFONT_PRIMARY.copyWith(
-        fontSize: FontManager.REGULAR,
-        fontWeight: FontManager.NORMAL,
-        letterSpacing: FontManager.SPACE_PRIMARY,
+      style: FontManager.TEXT_GFONT.copyWith(
+        fontSize: 14,
+        height: 1.143,
+        fontWeight: FontManager.LABEL_FONT_WEIGHT,
+        letterSpacing: FontManager.TEXT_LETTER_SPACE,
         color: color,
       ),
     );
   }
 }
 
-class RegularLightText extends StatelessWidget {
+//***************************************************************/
+// ************************    Tiny     *************************/
+//***************************************************************/
+class TinyLabel extends StatelessWidget {
   final String? text;
   final Color color;
-  const RegularLightText(
+  const TinyLabel(
     this.text, {
     super.key,
-    this.color = ColorManager.LIGHT_PRIMARY,
+    this.color = FontManager.COLOR,
   });
 
   @override
   Widget build(BuildContext context) {
     return Text(
       text!,
-      style: FontManager.GFONT_PRIMARY.copyWith(
-        fontSize: FontManager.REGULAR,
-        fontWeight: FontManager.NORMAL,
-        letterSpacing: FontManager.SPACE_PRIMARY,
+      style: FontManager.TEXT_GFONT.copyWith(
+        fontSize: 12,
+        height: 1.334,
+        fontWeight: FontManager.LABEL_FONT_WEIGHT,
+        letterSpacing: FontManager.TEXT_LETTER_SPACE,
         color: color,
       ),
     );
   }
 }
 
-class RegularBoldText extends StatelessWidget {
+//***************************************************************/
+//***************************************************************/
+// ********************     Lite Label     **********************/
+//***************************************************************/
+//***************************************************************/
+
+//***************************************************************/
+// ************************   Large   ***************************/
+//***************************************************************/
+class LiteLargeLabel extends StatelessWidget {
   final String? text;
-  final Color color;
-  const RegularBoldText(
+
+  const LiteLargeLabel(
     this.text, {
     super.key,
-    this.color = ColorManager.PRIMARY,
   });
 
   @override
   Widget build(BuildContext context) {
-    return Text(
-      text!,
-      style: FontManager.GFONT_PRIMARY.copyWith(
-        fontSize: FontManager.REGULAR,
-        fontWeight: FontManager.BOLD,
-        letterSpacing: FontManager.SPACE_PRIMARY,
-        color: color,
-      ),
+    return LargeLabel(
+      text,
+      color: FontManager.LITE_COLOR,
     );
   }
 }
 
-//*********************************************/
-// ******************   Large   ***************/
-//*********************************************/
-class LargeText extends StatelessWidget {
+//***************************************************************/
+// ************************   Medium   ***************************/
+//***************************************************************/
+class LiteMediumLabel extends StatelessWidget {
   final String? text;
-  final Color color;
-  const LargeText(
+
+  const LiteMediumLabel(
     this.text, {
     super.key,
-    this.color = ColorManager.PRIMARY,
   });
 
   @override
   Widget build(BuildContext context) {
-    return Text(
-      text!,
-      style: FontManager.GFONT_PRIMARY.copyWith(
-        fontSize: FontManager.LARGE,
-        fontWeight: FontManager.NORMAL,
-        letterSpacing: FontManager.SPACE_TITLE,
-        color: color,
-      ),
+    return MediumLabel(
+      text,
+      color: FontManager.LITE_COLOR,
     );
   }
 }
 
-class LargeLightText extends StatelessWidget {
+//***************************************************************/
+// ************************   Small   ***************************/
+//***************************************************************/
+class LiteSmallLabel extends StatelessWidget {
   final String? text;
-  final Color color;
-  const LargeLightText(
+
+  const LiteSmallLabel(
     this.text, {
     super.key,
-    this.color = ColorManager.LIGHT_PRIMARY,
   });
 
   @override
   Widget build(BuildContext context) {
-    return Text(
-      text!,
-      style: FontManager.GFONT_PRIMARY.copyWith(
-        fontSize: FontManager.LARGE,
-        fontWeight: FontManager.NORMAL,
-        letterSpacing: FontManager.SPACE_TITLE,
-        color: color,
-      ),
+    return SmallLabel(
+      text,
+      color: FontManager.LITE_COLOR,
     );
   }
 }
 
-class LargeBoldText extends StatelessWidget {
+//***************************************************************/
+// ************************   Tiny    ***************************/
+//***************************************************************/
+class LiteTinyLabel extends StatelessWidget {
   final String? text;
-  final Color color;
-  const LargeBoldText(
+
+  const LiteTinyLabel(
     this.text, {
     super.key,
-    this.color = ColorManager.PRIMARY,
   });
 
   @override
   Widget build(BuildContext context) {
-    return Text(
-      text!,
-      style: FontManager.GFONT_PRIMARY.copyWith(
-        fontSize: FontManager.LARGE,
-        fontWeight: FontManager.BOLD,
-        letterSpacing: FontManager.SPACE_TITLE,
-        color: color,
-      ),
+    return TinyLabel(
+      text,
+      color: FontManager.LITE_COLOR,
     );
   }
 }

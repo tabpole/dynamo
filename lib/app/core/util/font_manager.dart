@@ -5,31 +5,28 @@ import 'package:google_fonts/google_fonts.dart';
 
 class FontManager {
   // Select Fonts
-  static const String PRIMARY = "Quicksand";
+  static const String TEXT_FONT = "Quicksand";
+  static const String TITLE_FONT = "Quicksand";
 
   // Select Goolge Fonts
   static TextTheme GFONT_PRIMARY_THEME = GoogleFonts.quicksandTextTheme();
-  static var GFONT_PRIMARY = GoogleFonts.quicksand();
-  static var GFONT_TITLE = GoogleFonts.lexendPeta();
+  static var TEXT_GFONT = GoogleFonts.quicksand();
+  static var TITLE_GFONT = GoogleFonts.paytoneOne();
 
-  // Font Sizes
-  static const double TINY = 12;
-  static const double SMALL = 14;
-  static const double REGULAR = 16;
-  static const double LARGE = 18;
-  static const double XLARGE = 20;
-  static const double XXLARGE = 22;
-
-  // Display Text
-  static const double HUGE = 36;
-  static const double MASSIVE = 48;
-  static const double GIGANTIC = 64;
+  // Font Color
+  static const Color COLOR = Colors.black;
+  static const Color LITE_COLOR = Color.fromARGB(255, 158, 158, 158);
 
   // Font weight
-  static const FontWeight NORMAL = FontWeight.w400;
-  static const FontWeight BOLD = FontWeight.w600;
+  static const FontWeight PARAGRAPH_FONT_WEIGHT = FontWeight.w400;
+  static const FontWeight LITE_PARAGRAPH_FONT_WEIGHT = FontWeight.w400;
+  static const FontWeight LABEL_FONT_WEIGHT = FontWeight.w500;
+
+  static const FontWeight HEADING_FONT_WEIGHT = FontWeight.w700;
+  static const FontWeight DISPLAY_FONT_WEIGHT = FontWeight.w700;
 
   // Font Letter Spacing
-  static const double SPACE_PRIMARY = 1;
-  static const double SPACE_TITLE = .5;
+  static const double TEXT_LETTER_SPACE = 1;
+  static const double HEADING_LETTER_SPACE = .5;
+  static const double DISPLAY_LETTER_SPACE = .5;
 }
