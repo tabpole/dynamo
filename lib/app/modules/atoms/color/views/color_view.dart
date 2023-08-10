@@ -4,8 +4,8 @@ import '../../../../widgets/app_container.dart';
 
 import 'accent_section.dart';
 import 'attention_section.dart';
-import 'primary_section.dart';
-import 'secondary_section.dart';
+import 'surface_section.dart';
+import 'inverse_accent_section.dart';
 
 class ColorView extends StatelessWidget {
   const ColorView({Key? key}) : super(key: key);
@@ -22,13 +22,9 @@ class ColorView extends StatelessWidget {
             child: Column(
               children: [
                 AccentSection(),
-                SizedBox(height: 64),
-                SizedBox(height: 64),
-                SecondarySection(),
-                PrimarySection(),
-                SizedBox(height: 64),
+                InverseAccentSection(),
+                SurfaceSection(),
                 AttentionSection(),
-                SizedBox(height: 64),
               ],
             ),
           ),

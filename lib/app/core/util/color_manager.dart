@@ -10,12 +10,12 @@ class ColorManager {
 
   // Accent , Brand , tone color
   static const Color PRIMARY = Color(0xff0050FF);
-  static const Color SECONDARY = Color(0xff6a00f4);
-  static const Color TERTIARY = Color(0xff780a1d);
+  static const Color SECONDARY = Color(0xff001f54);
+  static const Color TERTIARY = Color(0xff16425b);
 
-  static Color INVERSE_PRIMARY = PRIMARY.withOpacity(0.1);
-  static Color INVERSE_SECONDARY = SECONDARY.withOpacity(0.1);
-  static Color INVERSE_TERTIARY = TERTIARY.withOpacity(0.1);
+  static Color INVERSE_PRIMARY = PRIMARY.withOpacity(0.05);
+  static Color INVERSE_SECONDARY = SECONDARY.withOpacity(0.05);
+  static Color INVERSE_TERTIARY = TERTIARY.withOpacity(0.05);
 
   static const Color ON_PRIMARY = Colors.white;
   static const Color ON_SECONDARY = Colors.white;
@@ -27,10 +27,10 @@ class ColorManager {
   static const Color GAMMA_VARIANT = Color(0xff6a00f4);
   static const Color DELTA_VARIANT = Color(0xff780a1d);
 
-  static Color INVERSE_ALPHA_VARIANT = ALPHA_VARIANT.withOpacity(0.1);
-  static Color INVERSE_BETA_VARIANT = BETA_VARIANT.withOpacity(0.1);
-  static Color INVERSE_GAMMA_VARIANT = GAMMA_VARIANT.withOpacity(0.1);
-  static Color INVERSE_DELTA_VARIANT = DELTA_VARIANT.withOpacity(0.1);
+  static Color INVERSE_ALPHA_VARIANT = ALPHA_VARIANT.withOpacity(0.05);
+  static Color INVERSE_BETA_VARIANT = BETA_VARIANT.withOpacity(0.05);
+  static Color INVERSE_GAMMA_VARIANT = GAMMA_VARIANT.withOpacity(0.05);
+  static Color INVERSE_DELTA_VARIANT = DELTA_VARIANT.withOpacity(0.05);
 
   static const Color ON_ALPHA_VARIANT = Colors.white;
   static const Color ON_BETA_VARIANT = Colors.white;
@@ -43,10 +43,10 @@ class ColorManager {
   static const Color WARNING = Color(0xffFFb71b);
   static const Color DANGER = Color(0xffFF4015);
 
-  static Color INVERSE_SUCCESS = SUCCESS.withOpacity(0.1);
-  static Color INVERSE_INFO = INFO.withOpacity(0.1);
-  static Color INVERSE_WARNING = WARNING.withOpacity(0.1);
-  static Color INVERSE_DANGER = DANGER.withOpacity(0.1);
+  static Color INVERSE_SUCCESS = SUCCESS.withOpacity(0.05);
+  static Color INVERSE_INFO = INFO.withOpacity(0.05);
+  static Color INVERSE_WARNING = WARNING.withOpacity(0.05);
+  static Color INVERSE_DANGER = DANGER.withOpacity(0.05);
 
   static const Color ON_SUCCESS = Colors.white;
   static const Color ON_INFO = Colors.white;
