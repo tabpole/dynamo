@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
+import '../../../routes/app_pages.dart';
 import '../../../widgets/atoms/titles.dart';
 import '../../../widgets/elements/cards.dart';
 
@@ -17,10 +19,16 @@ class ElementSection extends StatelessWidget {
             spacing: 16,
             runSpacing: 16,
             children: [
-              for (int index = 0; index < 4; index++)
-                const CircularIconTextCard(
-                  title: 'Example',
-                ),
+              CircularIconTextCard(
+                title: 'Card',
+                icon: Icons.check_box_outline_blank_outlined,
+                onTap: () => Get.toNamed(Routes.CARD),
+              ),
+              CircularIconTextCard(
+                title: 'Tile',
+                icon: Icons.category_rounded,
+                onTap: () => Get.toNamed(Routes.TILE),
+              ),
             ],
           ),
         ),

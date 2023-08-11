@@ -36,18 +36,33 @@ class AtomSection extends StatelessWidget {
               ),
               CircularIconTextCard(
                 title: 'Icon',
-                icon: Icons.smart_button_rounded,
+                icon: Icons.incomplete_circle_outlined,
                 onTap: () => Get.toNamed(Routes.ICON),
               ),
               CircularIconTextCard(
                 title: 'Chip',
-                icon: Icons.smart_button_rounded,
+                icon: Icons.text_fields,
                 onTap: () => Get.toNamed(Routes.CHIP),
               ),
               CircularIconTextCard(
                 title: 'Badge',
-                icon: Icons.smart_button_rounded,
+                icon: Icons.circle_sharp,
                 onTap: () => Get.toNamed(Routes.BADGE),
+              ),
+              CircularIconTextCard(
+                title: 'Input',
+                icon: Icons.input_rounded,
+                onTap: () => Get.toNamed(Routes.INPUT),
+              ),
+              CircularIconTextCard(
+                title: 'Alert',
+                icon: Icons.wrap_text,
+                onTap: () => Get.toNamed(Routes.ALERT),
+              ),
+              CircularIconTextCard(
+                title: 'Avatar',
+                icon: Icons.crop_original_rounded,
+                onTap: () => Get.toNamed(Routes.AVATAR),
               ),
             ],
           ),
