@@ -6,14 +6,20 @@ import '../modules/actions/sheet/bindings/sheet_binding.dart';
 import '../modules/actions/sheet/views/sheet_view.dart';
 import '../modules/actions/snackbar/bindings/snackbar_binding.dart';
 import '../modules/actions/snackbar/views/snackbar_view.dart';
+import '../modules/atoms/button/bindings/button_binding.dart';
+import '../modules/atoms/button/views/button_view.dart';
 import '../modules/atoms/color/bindings/color_binding.dart';
 import '../modules/atoms/color/views/color_view.dart';
 import '../modules/atoms/typography/bindings/typography_binding.dart';
 import '../modules/atoms/typography/views/typography_view.dart';
-import '../modules/atoms/button/bindings/button_binding.dart';
-import '../modules/atoms/button/views/button_view.dart';
+import '../modules/atoms/badge/bindings/badge_binding.dart';
+import '../modules/atoms/badge/views/badge_view.dart';
+import '../modules/atoms/chip/bindings/chip_binding.dart';
+import '../modules/atoms/chip/views/chip_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
+import '../modules/atoms/icon/bindings/icon_binding.dart';
+import '../modules/atoms/icon/views/icon_view.dart';
 
 // ignore_for_file: constant_identifier_names
 
@@ -48,6 +54,21 @@ class AppPages {
       name: _Paths.BUTTON,
       page: () => const ButtonView(),
       binding: ButtonBinding(),
+    ),
+    GetPage(
+      name: _Paths.BADGE,
+      page: () => const BadgeView(),
+      binding: BadgeBinding(),
+    ),
+    GetPage(
+      name: _Paths.CHIP,
+      page: () => const ChipView(),
+      binding: ChipBinding(),
+    ),
+    GetPage(
+      name: _Paths.ICON,
+      page: () => const IconView(),
+      binding: IconBinding(),
     ),
     //***********************************************/
     // ***************** Elements *******************/

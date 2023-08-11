@@ -12,6 +12,9 @@ abstract class Routes {
   static const COLOR = _Paths.COLOR;
   static const TYPOGRAPHY = _Paths.TYPOGRAPHY;
   static const BUTTON = _Paths.BUTTON;
+  static const BADGE = _Paths.BADGE;
+  static const CHIP = _Paths.CHIP;
+  static const ICON = _Paths.ICON;
 
   //***********************************************/
   // ***************** Elements *******************/
@@ -38,6 +41,9 @@ abstract class _Paths {
   static const COLOR = '/color';
   static const TYPOGRAPHY = '/typography';
   static const BUTTON = '/button';
+  static const BADGE = '/badge';
+  static const CHIP = '/chip';
+  static const ICON = '/icon';
 
   //***********************************************/
   // ***************** Elements *******************/
