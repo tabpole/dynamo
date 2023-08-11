@@ -55,6 +55,10 @@ class ButtonView extends GetView<ButtonController> {
                     color: ColorManager.ON_PRIMARY,
                   ),
                 ),
+                ElevatedButton(
+                  onPressed: () {},
+                  child: const Text('hola'),
+                ),
               ],
             ),
           ),

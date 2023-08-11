@@ -4,10 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class FontManager {
-  // Select Fonts
-  static const String TEXT_FONT = "Quicksand";
-  static const String TITLE_FONT = "Quicksand";
-
   // Select Goolge Fonts
   static TextTheme GFONT_PRIMARY_THEME = GoogleFonts.signikaNegativeTextTheme();
   static var TEXT_GFONT = GoogleFonts.signikaNegative();
