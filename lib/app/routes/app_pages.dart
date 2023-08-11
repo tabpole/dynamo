@@ -14,8 +14,6 @@ import '../modules/atoms/badge/bindings/badge_binding.dart';
 import '../modules/atoms/badge/views/badge_view.dart';
 import '../modules/atoms/button/bindings/button_binding.dart';
 import '../modules/atoms/button/views/button_view.dart';
-import '../modules/atoms/chip/bindings/chip_binding.dart';
-import '../modules/atoms/chip/views/chip_view.dart';
 import '../modules/atoms/color/bindings/color_binding.dart';
 import '../modules/atoms/color/views/color_view.dart';
 import '../modules/atoms/icon/bindings/icon_binding.dart';
@@ -69,11 +67,6 @@ class AppPages {
       name: _Paths.BADGE,
       page: () => const BadgeView(),
       binding: BadgeBinding(),
-    ),
-    GetPage(
-      name: _Paths.CHIP,
-      page: () => const ChipView(),
-      binding: ChipBinding(),
     ),
     GetPage(
       name: _Paths.ICON,

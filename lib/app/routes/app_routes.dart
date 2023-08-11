@@ -13,7 +13,6 @@ abstract class Routes {
   static const TYPOGRAPHY = _Paths.TYPOGRAPHY;
   static const BUTTON = _Paths.BUTTON;
   static const ICON = _Paths.ICON;
-  static const CHIP = _Paths.CHIP;
   static const BADGE = _Paths.BADGE;
   static const INPUT = _Paths.INPUT;
   static const ALERT = _Paths.ALERT;
@@ -47,7 +46,6 @@ abstract class _Paths {
   static const TYPOGRAPHY = '/typography';
   static const BUTTON = '/button';
   static const ICON = '/icon';
-  static const CHIP = '/chip';
   static const BADGE = '/badge';
   static const INPUT = '/input';
   static const ALERT = '/alert';

@@ -40,11 +40,6 @@ class AtomSection extends StatelessWidget {
                 onTap: () => Get.toNamed(Routes.ICON),
               ),
               CircularIconTextCard(
-                title: 'Chip',
-                icon: Icons.text_fields,
-                onTap: () => Get.toNamed(Routes.CHIP),
-              ),
-              CircularIconTextCard(
                 title: 'Badge',
                 icon: Icons.circle_sharp,
                 onTap: () => Get.toNamed(Routes.BADGE),
