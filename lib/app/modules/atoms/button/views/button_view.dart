@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
+import '../../../../widgets/app_container.dart';
+import '../../../../widgets/atoms/buttons.dart';
 import '../controllers/button_controller.dart';
 
 class ButtonView extends GetView<ButtonController> {
@@ -10,13 +12,26 @@ class ButtonView extends GetView<ButtonController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('ButtonView'),
-        centerTitle: true,
+        title: const Text('Button'),
       ),
-      body: const Center(
-        child: Text(
-          'ButtonView is working',
-          style: TextStyle(fontSize: 20),
+      body: SingleChildScrollView(
+        child: AppContainer(
+          child: SizedBox(
+            width: double.maxFinite,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                BaseButton(
+                  onPressed: () {},
+                  label: 'Base Button',
+                  block: false,
+                ),
+                PrimaryButton(onPressed: () {}, label: 'Primary'),
+                SecondaryButton(onPressed: () {}, label: 'Secondary'),
+                TertiaryButton(onPressed: () {}, label: 'Tertiary'),
+              ],
+            ),
+          ),
         ),
       ),
     );
