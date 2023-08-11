@@ -21,11 +21,6 @@ class ButtonView extends GetView<ButtonController> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                BaseButton(
-                  onPressed: () {},
-                  label: 'Base Button',
-                  block: false,
-                ),
                 PrimaryButton(onPressed: () {}, label: 'Primary'),
                 SecondaryButton(onPressed: () {}, label: 'Secondary'),
                 TertiaryButton(onPressed: () {}, label: 'Tertiary'),
