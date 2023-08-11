@@ -29,6 +29,11 @@ class AtomSection extends StatelessWidget {
                 icon: Icons.text_fields_rounded,
                 onTap: () => Get.toNamed(Routes.TYPOGRAPHY),
               ),
+              CircularIconTextCard(
+                title: 'Button',
+                icon: Icons.smart_button_rounded,
+                onTap: () => Get.toNamed(Routes.BUTTON),
+              ),
             ],
           ),
         ),

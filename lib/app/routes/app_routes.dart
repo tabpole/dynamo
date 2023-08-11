@@ -11,6 +11,7 @@ abstract class Routes {
   //***********************************************/
   static const COLOR = _Paths.COLOR;
   static const TYPOGRAPHY = _Paths.TYPOGRAPHY;
+  static const BUTTON = _Paths.BUTTON;
 
   //***********************************************/
   // ***************** Elements *******************/
@@ -36,6 +37,7 @@ abstract class _Paths {
   //***********************************************/
   static const COLOR = '/color';
   static const TYPOGRAPHY = '/typography';
+  static const BUTTON = '/button';
 
   //***********************************************/
   // ***************** Elements *******************/
